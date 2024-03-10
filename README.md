@@ -38,7 +38,7 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
 
 - API service / back-end
 
-    - NestJS 10 TypeScript
+    - [NestJS 10](https://nestjs.com/) TypeScript
     - Prisma ORM
     - PostgreSQL
     - Redis
@@ -46,13 +46,13 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
 
 - Admin panel web (Monorepo with API service)
 
-    - SvelteKit 2 TypeScript
+    - [SvelteKit 2](https://kit.svelte.dev/) TypeScript
     - Flowbite UI component
     - Tailwind CSS
 
 - Mobile app
 
-    - Flutter 3
+    - [Flutter 3](https://flutter.dev/)
       - BLoC
       - Freezed
       - Retrofit
@@ -62,7 +62,7 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
 
 
 
-## Instalasi
+## Instalasi & How to run
 
 [Back-end API service](https://github.com/ikhsan3adi/backtix-support/blob/main/docs/api-service.md)
 

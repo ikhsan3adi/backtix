@@ -1,4 +1,4 @@
-### Back-end service (NestJS)
+## Back-end service (NestJS)
 
 Sudah termasuk aplikasi admin panel didalamnya
 
@@ -7,7 +7,7 @@ apps/api
 apps/admin-panel
 ```
 
-#### Persyaratan Sistem
+### Persyaratan Sistem
 
 Pastikan sistem Anda memenuhi persyaratan berikut sebelum memulai instalasi:
 
@@ -15,7 +15,7 @@ Pastikan sistem Anda memenuhi persyaratan berikut sebelum memulai instalasi:
 - PostgreSQL 15 or higher
 - Redis v5 or higher
 
-#### Langkah-langkah Instalasi
+### Langkah-langkah Instalasi
 
 1. Clone/extract Repository
 
@@ -104,3 +104,32 @@ npm i
     ```
 
 5. Configurasi variabel `.env` lainnya sesuai kebutuhan.
+
+### How to run
+
+1. Generate `metadata`:
+
+```bash
+npm run metadata --workspace=@backtix-service/api
+```
+
+2. Run app
+
+```bash
+npm run start
+```
+- Development mode
+
+```bash
+npm run start:dev
+```
+
+2. Swagger API docs
+
+- Buka http://localhost:3000/api/docs (sesuaikan base url)
+
+3. Test (optional)
+
+```bash
+npm test
+```

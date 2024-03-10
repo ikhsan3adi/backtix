@@ -1,18 +1,23 @@
-### Mobile app (Flutter)
+## Mobile app (Flutter)
 
-#### Persyaratan Sistem
+### Persyaratan Sistem
 
 Pastikan sistem Anda memenuhi persyaratan berikut sebelum memulai instalasi:
 
 - Flutter SDK v3.16 or higher
 
-#### Langkah-langkah Instalasi
+### Langkah-langkah Instalasi
 
 1. Clone/extract Repository
 
 2. Install dependencies:
 ```bash
 flutter pub get
+```
+3. Jalankan `build_runner` untuk men-generate file `*.g.dart`
+
+```bash
+dart run build_runner build
 ```
 
 #### Setup environment
