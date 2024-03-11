@@ -10,7 +10,7 @@ Pastikan sistem Anda memenuhi persyaratan berikut sebelum memulai instalasi:
 
 ### Langkah-langkah Instalasi
 
-1. Ikuti step di [Back-end service](https://github.com/ikhsan3adi/backtix-support/blob/main/docs/api-service.md)
+1. Ikuti langkah instalasi [Back-end service](https://github.com/ikhsan3adi/backtix-support/blob/main/docs/api-service.md) terlebih dahulu
 
 2. Setup environment
     
