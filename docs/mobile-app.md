@@ -28,7 +28,7 @@ dart run build_runner build
 
 #### Midtrans client key
 
-- Selesaikan langkah sebelumnya di [Back-end service - Setup midtrans server & client key](https://github.com/ikhsan3adi/backtix-support/blob/main/docs/api-service.md#setup-midtrans-server--client-key)
+- Selesaikan langkah sebelumnya di [Back-end service - Setup midtrans server & client key](https://github.com/ikhsan3adi/backtix/blob/main/docs/api-service.md#setup-midtrans-server--client-key)
 
 - Salin **client key** ke file `.env`
 
@@ -41,7 +41,7 @@ MIDTRANS_CLIENT_KEY=Mid-client-xxxx
 
 #### Setup **Google sign in** client ID
 
-- Selesaikan langkah sebelumnya di [Back-end service - Setup Google sign in server & client ID](https://github.com/ikhsan3adi/backtix-support/blob/main/docs/api-service.md#setup-google-sign-in-server--client-id)
+- Selesaikan langkah sebelumnya di [Back-end service - Setup Google sign in server & client ID](https://github.com/ikhsan3adi/backtix/blob/main/docs/api-service.md#setup-google-sign-in-server--client-id)
 
 - Salin `Web Client ID` dan `Server Client ID` ke file `.env`
 
@@ -114,11 +114,11 @@ di project aplikasi, lalu jalankan perintah berikut:
   ```
   - Cari dan salin nilai `SHA1` dari `variant: debug` paling atas.
 
-  ![Terminal](https://raw.githubusercontent.com/ikhsan3adi/backtix-support/main/assets/Screenshot_5.png)
+  ![Terminal](https://raw.githubusercontent.com/ikhsan3adi/backtix/main/assets/Screenshot_5.png)
 
   - Pergi ke [Google Cloud Console](https://console.cloud.google.com)
 
-  ![Cloud Console](https://raw.githubusercontent.com/ikhsan3adi/backtix-support/main/assets/Screenshot_2.png)
+  ![Cloud Console](https://raw.githubusercontent.com/ikhsan3adi/backtix/main/assets/Screenshot_2.png)
 
   - Pilih `Credentials` di sidebar kiri, klik `CREATE CREDENTIALS`, pilih `OAuth client ID`
   - Pilih `Android` application type
@@ -133,7 +133,7 @@ di project aplikasi, lalu jalankan perintah berikut:
   }
   ```
 
-  ![Cloud Console](https://raw.githubusercontent.com/ikhsan3adi/backtix-support/main/assets/Screenshot_6.png)
+  ![Cloud Console](https://raw.githubusercontent.com/ikhsan3adi/backtix/main/assets/Screenshot_6.png)
 
 
   - Jika ingin mengubah package name bisa menggunakan [change_app_package_name](https://pub.dev/packages/change_app_package_name)
