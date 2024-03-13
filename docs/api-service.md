@@ -59,18 +59,18 @@ npm run db:seed
 
 - Masukkan nama aplikasi, email dan `Developer contact information`
 
-![Cloud Console](https://raw.githubusercontent.com/ikhsan3adi/backtix/main/assets/Screenshot_1.png)
+![Cloud Console](/assets/Screenshot_1.png)
 
 - **Server** client ID
 
   - Pilih `Credentials` di sidebar kiri, klik `CREATE CREDENTIALS`, pilih `OAuth client ID`
 
-  ![Cloud Console](https://raw.githubusercontent.com/ikhsan3adi/backtix/main/assets/Screenshot_2.png)
+  ![Cloud Console](/assets/Screenshot_2.png)
 
 
   - Pilih `Web application` application type, beri nama lalu save/create
 
-  ![Cloud Console](https://raw.githubusercontent.com/ikhsan3adi/backtix/main/assets/Screenshot_3.png)
+  ![Cloud Console](/assets/Screenshot_3.png)
 
   - Salin `Client ID` dan `Client secret` ke file `.env`
 
@@ -86,7 +86,7 @@ npm run db:seed
 
   - Pilih `Web application` application type, beri nama dan `Authorized JavaScript origins` seperti di gambar (jika menggunakan localhost), lalu save/create
 
-  ![Cloud Console](https://raw.githubusercontent.com/ikhsan3adi/backtix/main/assets/Screenshot_4.png)
+  ![Cloud Console](/assets/Screenshot_4.png)
 
   - Salin `Client ID` dan `Client secret` ke file `.env`
 
