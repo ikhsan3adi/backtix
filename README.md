@@ -32,6 +32,8 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
 
   Pembuat acara dapat menarik saldo dan pendapatan mereka melalui fitur withdraw yang disediakan oleh aplikasi. Ini memberikan fleksibilitas kepada penyelenggara acara untuk mengelola hasil keuangan mereka dengan mudah.
 
+- Notifikasi (coming soon :soon:)
+
 ## Tech Stack
 
 - API service / back-end
@@ -56,11 +58,11 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
       - Retrofit
       - fpdart
 
-## Source Code
+## _Source Code_
 
+:soon:
 
-
-## Instalasi & How to run
+## Instalasi & _How to run_
 
 [Back-end API service](docs/api-service.md)
 
