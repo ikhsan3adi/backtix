@@ -37,3 +37,17 @@ npm run admin:start
 ```bash
 npm run admin:dev
 ```
+
+### Screenshots
+
+![Dashboard](/assets/admin/dashboard.png)
+
+![Events](/assets/admin/events.png)
+![Events Dark](/assets/admin/events-dark.png)
+
+![Events Detail](/assets/admin/event-detail.png)
+
+![Users](/assets/admin/users.png)
+![Users Dark](/assets/admin/users-dark.png)
+
+![Settings](/assets/admin/settings.png)

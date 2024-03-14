@@ -142,3 +142,7 @@ npm run start:dev
 ```bash
 npm test
 ```
+
+### Screenshots
+
+![Swagger API Docs](/assets/swagger.png)
