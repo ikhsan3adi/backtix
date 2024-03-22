@@ -2,6 +2,9 @@
 
 <img src="assets/banner.png">
 
+-   [Indonesian](./README.md)
+-   [English](./README.en.md)
+
 This online event creation and ticket sales application is a platform that makes it easy for users to access and participate in various events. Here is a brief description of the app's main features:
 
 -   Authentication:
@@ -62,7 +65,9 @@ This online event creation and ticket sales application is a platform that makes
 
 ## _Source Code_
 
-:soon:
+<a href="https://t.me/ikhsan3adi">
+  <img height='25em' src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" title="ikhsan3adi" />
+</a>
 
 ## Installation &_How to run_
 
