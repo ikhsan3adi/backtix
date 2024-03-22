@@ -1,0 +1,29 @@
+name: Translate README
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
+      # ISO Langusge Codes: https://cloud.google.com/translate/docs/languages  
+      - name: Adding README - English
+        uses: dephraiim/translate-readme@main
+        with:
+          LANG: en-US
+      - name: Adding README - English to sub directory
+        uses: dephraiim/translate-readme@main
+        working-directory: ./docs
+        with:
+          LANG: en-US
