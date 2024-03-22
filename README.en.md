@@ -29,7 +29,7 @@ This online event creation and ticket sales application is a platform that makes
 
 -   Scan QR Code for Event Creator:
 
-    This feature allows event creators to easily verify visitor attendance by scanning the QR code on the ticket. This helps in efficient event management and ticket validation.
+    Fitur ini memungkinkan pembuat acara untuk dengan mudah memverifikasi kehadiran pengunjung dengan melakukan scan QR code pada tiket. Hal ini membantu dalam manajemen acara dan validasi tiket secara efisien.
 
 -   Withdraw Balance and Income:
 
