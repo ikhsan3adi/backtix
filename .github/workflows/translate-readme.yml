@@ -16,7 +16,7 @@ jobs:
           node-version: 18.x
       # ISO Langusge Codes: https://cloud.google.com/translate/docs/languages  
       - name: Adding README - English
-        uses: ikhsan3adi/translate-multiple-markdown@main
+        uses: ikhsan3adi/translate-multiple-markdown@test
         with:
           LANG: en
           FILES: |-
