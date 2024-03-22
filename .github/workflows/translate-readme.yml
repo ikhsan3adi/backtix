@@ -22,8 +22,3 @@ jobs:
         uses: dephraiim/translate-readme@main
         with:
           LANG: en-US
-      - name: Adding README - English to sub directory
-        uses: dephraiim/translate-readme@main
-        working-directory: ./docs
-        with:
-          LANG: en-US
