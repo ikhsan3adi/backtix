@@ -71,9 +71,9 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
 
 ## Instalasi & _How to run_
 
-[Back-end API service](docs/api-service.md)
+[Back-end API service](api-service.md)
 
-[Admin-panel](docs/admin-panel.md)
+[Admin-panel](admin-panel.md)
 
-[Mobile app](docs/mobile-app.md)
+[Mobile app](mobile-app.md)
 

@@ -71,8 +71,8 @@ This online event creation and ticket sales application is a platform that makes
 
 ## Installation &_How to run_
 
-[Back-end API service](docs/api-service.md)
+[Back-end API service](api-service.md)
 
-[Admin-panel](docs/admin-panel.md)
+[Admin-panel](admin-panel.md)
 
-[Mobile app](docs/mobile-app.md)
+[Mobile app](mobile-app.md)
