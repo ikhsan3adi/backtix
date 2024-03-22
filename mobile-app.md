@@ -1,5 +1,8 @@
 ## Mobile app (Flutter)
 
+- [Bahasa Indonesia](./mobile-app.md)
+- [English](./mobile-app.en.md)
+
 ### Persyaratan Sistem
 
 Pastikan sistem Anda memenuhi persyaratan berikut sebelum memulai instalasi:

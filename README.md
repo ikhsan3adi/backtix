@@ -2,6 +2,9 @@
 
 <img src="assets/banner.png">
 
+- [Bahasa Indonesia](./README.md)
+- [English](./README.en.md)
+
 Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang menyediakan kemudahan bagi pengguna untuk mengakses dan berpartisipasi dalam berbagai acara. Berikut adalah deskripsi singkat fitur-fitur utama aplikasi:
 
 - Autentikasi:
@@ -62,7 +65,9 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
 
 ## _Source Code_
 
-:soon:
+<a href="https://t.me/ikhsan3adi">
+  <img height='25em' src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" title="ikhsan3adi" />
+</a>
 
 ## Instalasi & _How to run_
 

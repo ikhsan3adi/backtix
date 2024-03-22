@@ -1,5 +1,8 @@
 ## Admin panel (SvelteKit)
 
+- [Bahasa Indonesia](./admin-panel.md)
+- [English](./admin-panel.en.md)
+
 ### Persyaratan Sistem
 
 Pastikan sistem Anda memenuhi persyaratan berikut sebelum memulai instalasi:
