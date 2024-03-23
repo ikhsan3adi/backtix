@@ -2,8 +2,8 @@
 
 <img src="assets/banner.png">
 
-- [Bahasa Indonesia](./README.md)
-- [English](./README.en.md)
+- [Bahasa Indonesia](README.md)
+- [English](README.en.md)
 
 Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang menyediakan kemudahan bagi pengguna untuk mengakses dan berpartisipasi dalam berbagai acara. Berikut adalah deskripsi singkat fitur-fitur utama aplikasi:
 
@@ -71,9 +71,9 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
 
 ## Instalasi & _How to run_
 
-[Back-end API service](api-service.md)
+[Back-end API service](docs/api-service.md)
 
-[Admin-panel](admin-panel.md)
+[Admin-panel](docs/admin-panel.md)
 
-[Mobile app](mobile-app.md)
+[Mobile app](docs/mobile-app.md)
 

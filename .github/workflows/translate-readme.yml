@@ -22,6 +22,6 @@ jobs:
           LANG: en
           FILES: |-
             README.md
-            api-service.md
-            mobile-app.md
-            admin-panel.md
+            docs/api-service.md
+            docs/mobile-app.md
+            docs/admin-panel.md

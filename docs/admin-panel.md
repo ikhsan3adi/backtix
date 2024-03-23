@@ -1,7 +1,7 @@
 ## Admin panel (SvelteKit)
 
-- [Bahasa Indonesia](./admin-panel.md)
-- [English](./admin-panel.en.md)
+- [Bahasa Indonesia](admin-panel.md)
+- [English](admin-panel.en.md)
 
 ### Persyaratan Sistem
 

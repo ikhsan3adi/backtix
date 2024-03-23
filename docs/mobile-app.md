@@ -1,7 +1,7 @@
 ## Mobile app (Flutter)
 
-- [Bahasa Indonesia](./mobile-app.md)
-- [English](./mobile-app.en.md)
+- [Bahasa Indonesia](mobile-app.md)
+- [English](mobile-app.en.md)
 
 ### Persyaratan Sistem
 
