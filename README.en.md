@@ -2,8 +2,8 @@
 
 <img src="assets/banner.png">
 
--   [Indonesian](./README.md)
--   [English](./README.en.md)
+-   [Indonesian](README.md)
+-   [English](README.en.md)
 
 This online event creation and ticket sales application is a platform that makes it easy for users to access and participate in various events. Here is a brief description of the app's main features:
 
@@ -73,6 +73,6 @@ This online event creation and ticket sales application is a platform that makes
 
 [Back-end API service](docs/api-service.md)
 
-[Admin-panel](docs/api-service.en.md)
+[Admin-panel](docs/admin-panel.md)
 
-[Mobile app](mobile-app.md)
+[Mobile app](docs/mobile-app.md)
