@@ -5,7 +5,7 @@
 -   [Indonesian](README.md)
 -   [English](README.en.md)
 
-This online event creation and ticket sales application is a platform that makes it easy for users to access and participate in various events. Here is a brief description of the app's main features:
+Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang menyediakan kemudahan bagi pengguna untuk mengakses dan berpartisipasi dalam berbagai acara. Berikut adalah deskripsi singkat fitur-fitur utama aplikasi:
 
 -   Authentication:
 

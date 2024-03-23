@@ -5,7 +5,7 @@
 
 ### System Requirements
 
-Make sure your system meets the following requirements before starting the installation:
+Pastikan sistem Anda memenuhi persyaratan berikut sebelum memulai instalasi:
 
 -   Node.js v18 or higher
 -   PostgreSQL 15 or higher
@@ -13,7 +13,7 @@ Make sure your system meets the following requirements before starting the insta
 
 ### Installation Steps
 
-1.  Ikuti langkah instalasi [Back-end service](api-service.md)first
+1.  Follow the installation steps[Back-end service](api-service.md)first
 
 2.  Setup environment
 
