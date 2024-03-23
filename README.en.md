@@ -5,11 +5,11 @@
 -   [Indonesian](README.md)
 -   [English](README.en.md)
 
-Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang menyediakan kemudahan bagi pengguna untuk mengakses dan berpartisipasi dalam berbagai acara. Berikut adalah deskripsi singkat fitur-fitur utama aplikasi:
+This online event creation and ticket sales application is a platform that makes it easy for users to access and participate in various events. Here is a brief description of the app's main features:
 
 -   Authentication:
 
-    The app offers secure authentication via JSON Web Token (JWT) and Google Sign-In. Users can easily log in to their accounts with convenient and secure authentication methods.
+    Aplikasi ini menawarkan autentikasi yang aman melalui JSON Web Token (JWT) dan Google Sign-In. Pengguna dapat dengan mudah masuk ke akun mereka dengan metode otentikasi yang nyaman dan aman.
 
 -   Account Activation Via Email:
 
@@ -17,7 +17,7 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
 
 -   Nearby Event Search:
 
-    Users can search for events taking place closest to their location. This feature allows users to discover and participate in events organized around them.
+    Users can search for events taking place closest to their location. This feature allows users to discover and participate in events held near them.
 
 -   Ticket Purchase with Midtrans:
 

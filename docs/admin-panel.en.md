@@ -5,7 +5,7 @@
 
 ### System Requirements
 
-Pastikan sistem Anda memenuhi persyaratan berikut sebelum memulai instalasi:
+Make sure your system meets the following requirements before starting the installation:
 
 -   Node.js v18 or higher
 -   PostgreSQL 15 or higher
