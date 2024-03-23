@@ -9,7 +9,7 @@ This online event creation and ticket sales application is a platform that makes
 
 -   Authentication:
 
-    Aplikasi ini menawarkan autentikasi yang aman melalui JSON Web Token (JWT) dan Google Sign-In. Pengguna dapat dengan mudah masuk ke akun mereka dengan metode otentikasi yang nyaman dan aman.
+    The app offers secure authentication via JSON Web Token (JWT) and Google Sign-In. Users can easily log in to their accounts with convenient and secure authentication methods.
 
 -   Account Activation Via Email:
 
@@ -17,7 +17,7 @@ This online event creation and ticket sales application is a platform that makes
 
 -   Nearby Event Search:
 
-    Users can search for events taking place closest to their location. This feature allows users to discover and participate in events held near them.
+    Users can search for events taking place closest to their location. This feature allows users to discover and participate in events organized around them.
 
 -   Ticket Purchase with Midtrans:
 

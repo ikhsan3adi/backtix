@@ -150,6 +150,6 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         ![Cloud Console](/assets/Screenshot_6.png)
 
 
--   Jika ingin mengubah package name bisa menggunakan [change_app_package_name](https://pub.dev/packages/change_app_package_name)
+-   If you want to change the package name, you can use[change_app_package_name](https://pub.dev/packages/change_app_package_name)
 
 -   Enter`SHA1`from the previous step, then save/create
