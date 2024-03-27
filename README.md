@@ -63,7 +63,7 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
       - Retrofit
       - fpdart
 
-## _Source Code_
+## Demo & Source Code
 
 <a href="https://t.me/ikhsan3adi">
   <img height='25em' src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" title="ikhsan3adi" />
