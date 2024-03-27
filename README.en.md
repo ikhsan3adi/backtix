@@ -66,7 +66,7 @@ This online event creation and ticket sales application is a platform that makes
 ## Demo and Source Code
 
 <a href="https://t.me/ikhsan3adi">
-  <img height='25em' src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" title="ikhsan3adi" />
+  <img height='25em' src="https://img.shields.io/badge/Telegram%3A%20%40ikhsan3adi-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=blue" title="ikhsan3adi" />
 </a>
 
 ## Installation &_How to run_
