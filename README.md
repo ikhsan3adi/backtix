@@ -63,10 +63,14 @@ Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang 
       - Retrofit
       - fpdart
 
-## Demo & Source Code
+## Source Code
 
-<a href="https://t.me/ikhsan3adi">
-  <img height='25em' src="https://img.shields.io/badge/Telegram%3A%20%40ikhsan3adi-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=blue" title="ikhsan3adi" />
+<a href="https://github.com/ikhsan3adi/backtix-app">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
+</a>
+
+<a href="https://github.com/ikhsan3adi/backtix-service">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
 </a>
 
 ## Instalasi & _How to run_
