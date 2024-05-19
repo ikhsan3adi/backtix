@@ -19,7 +19,7 @@ Certifique-se de que seu sistema atenda aos seguintes requisitos antes de inicia
 
     Renomear`.env.example`para`.env`
 
-    Os valores de host e porta/origem devem ser diferentes do serviço API
+    Os valores de host e porta/origem devem ser diferentes do serviço da API
 
 ### Como correr
 
