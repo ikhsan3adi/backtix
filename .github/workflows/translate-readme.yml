@@ -8,18 +8,21 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        lang: [en, zh-CN, ja, ar, pt, es, fr, vi]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20.x
 
       # ISO Language Codes: https://cloud.google.com/translate/docs/languages  
-      - name: Adding README - English
+      - name: Adding README translations
         uses: ikhsan3adi/markdown-translator@master
         with:
-          LANG: en
+          LANG: ${{ matrix.lang }}
           FILES: |-
             README.md
             docs/api-service.md

@@ -1,11 +1,42 @@
 # BackTix
 
-<img src="assets/banner.png">
+> Open Source Event & Ticketing App
 
-- [Bahasa Indonesia](README.md)
-- [English](README.en.md)
+<img src="assets/social_preview.png">
+<br>
+<br>
+<a href="./README.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.en.md">
+  <img alt="Translation" src="https://img.shields.io/badge/English-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.zh-CN.md">
+  <img alt="Translation" src="https://img.shields.io/badge/简体中文-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.ja.md">
+  <img alt="Translation" src="https://img.shields.io/badge/日本語-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.ar.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Arabic_عربي-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.pt.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Português-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.es.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Español-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.fr.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Français-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.vi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
 
-Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang menyediakan kemudahan bagi pengguna untuk mengakses dan berpartisipasi dalam berbagai acara. Berikut adalah deskripsi singkat fitur-fitur utama aplikasi:
+---
+
+Aplikasi pembuatan acara dan penjualan tiket online ini merupakan platform yang menyediakan kemudahan bagi pengguna untuk mengakses dan berpartisipasi dalam berbagai acara. Berikut adalah deskripsi
+singkat fitur-fitur utama aplikasi:
 
 - Autentikasi:
 
