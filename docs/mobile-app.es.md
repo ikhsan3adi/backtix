@@ -152,4 +152,4 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 
 -   Si desea cambiar el nombre del paquete, puede utilizar[cambiar_nombre_paquete_aplicación](https://pub.dev/packages/change_app_package_name)
 
--   Ingresar`SHA1`desde el paso anterior, luego guarde/cree
+-   Ingresar`SHA1`desde el paso anterior, luego guardar/crear
