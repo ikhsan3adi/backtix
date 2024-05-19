@@ -1,10 +1,10 @@
-*.md linguist-vendored=false
-*.md linguist-generated=false
-*.md linguist-documentation=false
+docs/**/*.md linguist-vendored=false
+docs/**/*.md linguist-generated=false
+docs/**/*.md linguist-documentation=false
 docs/**/*.md linguist-detectable=true
 docs/api-service.md linguist-language=ts
-docs/api-service.en.md linguist-language=ts
+docs/api-service.*.md linguist-language=ts
 docs/mobile-app.md linguist-language=dart
-docs/mobile-app.en.md linguist-language=dart
+docs/mobile-app.*.md linguist-language=dart
 docs/admin-panel.md linguist-language=svelte
-docs/admin-panel.en.md linguist-language=svelte
+docs/admin-panel.*.md linguist-language=svelte
