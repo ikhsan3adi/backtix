@@ -1,11 +1,41 @@
 # BackTix
 
-<img src="assets/banner.png">
+> Open Source Event & Ticketing App
 
--   [Indonesian](README.md)
--   [English](README.en.md)
+<img src="assets/social_preview.png">
 
-This online event creation and ticket sales application is a platform that makes it easy for users to access and participate in various events. Here is a brief description of the app's main features:
+<a href="./README.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.en.md">
+  <img alt="Translation" src="https://img.shields.io/badge/English-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.zh-CN.md">
+  <img alt="Translation" src="https://img.shields.io/badge/简体中文-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.ja.md">
+  <img alt="Translation" src="https://img.shields.io/badge/日本語-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.ar.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Arabic_عربي-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.pt.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Português-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.es.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Español-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.fr.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Français-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./README.vi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+
+* * *
+
+This online event creation and ticket sales application is a platform that makes it easy for users to access and participate in various events. Following is the description
+Briefly the main features of the application:
 
 -   Authentication:
 
