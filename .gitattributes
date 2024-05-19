@@ -1,7 +1,7 @@
 *.md linguist-vendored=false
 *.md linguist-generated=false
 *.md linguist-documentation=false
-*.md linguist-detectable=true
+docs/**/*.md linguist-detectable=true
 docs/api-service.md linguist-language=ts
 docs/api-service.en.md linguist-language=ts
 docs/mobile-app.md linguist-language=dart
