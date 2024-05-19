@@ -74,7 +74,7 @@ Tóm tắt các tính năng chính của ứng dụng:
 -   Dịch vụ API/back-end
 
     -   [NestJS 10](https://nestjs.com/)Bản đánh máy
-    -   Prisma ORM
+    -   ORM Prisma
     -   PostgreSQL
     -   làm lại
     -   Swagger(tài liệu API)
