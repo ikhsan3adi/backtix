@@ -3,8 +3,7 @@
 > Aplicativo de código aberto para eventos e ingressos
 
 <img src="assets/social_preview.png">
-<br>
-<br>
+
 <a href="./README.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
