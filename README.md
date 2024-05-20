@@ -31,6 +31,9 @@
 <a href="./README.vi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+<a href="./README.hi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
 
 ---
 
