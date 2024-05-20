@@ -31,6 +31,9 @@
 <a href="./README.vi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+<a href="./README.hi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
 
 * * *
 
@@ -74,9 +77,9 @@ Tóm tắt các tính năng chính của ứng dụng:
 -   Dịch vụ API/back-end
 
     -   [NestJS 10](https://nestjs.com/)Bản đánh máy
-    -   ORM Prisma
+    -   Prisma ORM
     -   PostgreSQL
-    -   làm lại
+    -   Làm lại
     -   Swagger(tài liệu API)
 
 -   Web bảng quản trị (Monorepo với dịch vụ API)
@@ -103,7 +106,7 @@ Tóm tắt các tính năng chính của ứng dụng:
   <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
 </a>
 
-## Cài đặt &_Cách chạy_
+## Cài đặt &_Làm thế nào để chạy_
 
 [Dịch vụ API phụ trợ](docs/api-service.md)
 

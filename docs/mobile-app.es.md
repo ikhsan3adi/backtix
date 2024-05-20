@@ -1,7 +1,35 @@
 ## Aplicación móvil (Flutter)
 
--   [indonesio](mobile-app.md)
--   [Inglés](mobile-app.en.md)
+<a href="./mobile-app.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.en.md">
+  <img alt="Translation" src="https://img.shields.io/badge/English-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.zh-CN.md">
+  <img alt="Translation" src="https://img.shields.io/badge/简体中文-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.ja.md">
+  <img alt="Translation" src="https://img.shields.io/badge/日本語-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.ar.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Arabic_عربي-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.pt.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Português-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.es.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Español-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.fr.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Français-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.vi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.hi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
 
 ### Requisitos del sistema
 
@@ -152,4 +180,4 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 
 -   Si desea cambiar el nombre del paquete, puede utilizar[cambiar_nombre_paquete_aplicación](https://pub.dev/packages/change_app_package_name)
 
--   Ingresar`SHA1`desde el paso anterior, luego guardar/crear
+-   Ingresar`SHA1`desde el paso anterior, luego guarde/cree

@@ -1,4 +1,4 @@
-# バックティック
+# バックティックス
 
 > オープンソースのイベントおよび発券アプリ
 
@@ -31,6 +31,9 @@
 <a href="./README.vi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+<a href="./README.hi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
 
 * * *
 
@@ -59,7 +62,7 @@
 
 -   イベント作成者の QR コードをスキャンします:
 
-    この機能により、イベント作成者はチケットの QR コードをスキャンすることで訪問者の出席を簡単に確認できます。これは、効率的なイベント管理とチケットの検証に役立ちます。
+    この機能により、イベント作成者はチケットの QR コードをスキャンすることで、来場者の出席を簡単に確認できます。これは、効率的なイベント管理とチケットの検証に役立ちます。
 
 -   出金残高と収入:
 

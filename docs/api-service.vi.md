@@ -1,7 +1,35 @@
 ## Dịch vụ back-end (NestJS)
 
--   [tiếng Indonesia](api-service.md)
--   [Tiếng Anh](api-service.en.md)
+<a href="./api-service.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.en.md">
+  <img alt="Translation" src="https://img.shields.io/badge/English-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.zh-CN.md">
+  <img alt="Translation" src="https://img.shields.io/badge/简体中文-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.ja.md">
+  <img alt="Translation" src="https://img.shields.io/badge/日本語-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.ar.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Arabic_عربي-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.pt.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Português-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.es.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Español-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.fr.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Français-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.vi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./api-service.hi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
 
 Nó bao gồm một ứng dụng bảng quản trị
 
@@ -117,7 +145,7 @@ MIDTRANS_CLIENT_KEY=
 
 -   Cấu hình biến`.env`những người khác khi cần thiết.
 
-### Cách chạy
+### Làm thế nào để chạy
 
 1.  Phát ra`metadata`:
 

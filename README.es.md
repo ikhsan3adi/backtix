@@ -31,6 +31,9 @@
 <a href="./README.vi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+<a href="./README.hi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
 
 * * *
 
@@ -53,7 +56,7 @@ Brevemente las principales características de la aplicación:
 
     Esta aplicación brinda servicios de venta de boletos en línea utilizando la pasarela de pago Midtrans. Los usuarios pueden comprar fácilmente entradas para eventos de su interés con una variedad de cómodas opciones de pago.
 
--   Crear un evento con la aprobación del administrador:
+-   Crear un evento con aprobación del administrador:
 
     Los usuarios que quieran realizar eventos pueden crearlos a través de la aplicación. Sin embargo, el evento se publicará después de obtener la aprobación del administrador. Esto es para garantizar la calidad y relevancia de los eventos mostrados en la plataforma.
 

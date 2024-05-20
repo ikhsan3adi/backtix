@@ -1,4 +1,4 @@
-## لوحة الإدارة (SvelteKit)
+## व्यवस्थापक पैनल (SvelteKit)
 
 <a href="./admin-panel.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,45 +31,45 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-### متطلبات النظام
+### सिस्टम आवश्यकताएं
 
-تأكد من أن نظامك يلبي المتطلبات التالية قبل بدء التثبيت:
+इंस्टॉलेशन शुरू करने से पहले सुनिश्चित करें कि आपका सिस्टम निम्नलिखित आवश्यकताओं को पूरा करता है:
 
--   Node.js v18 أو أعلى
--   PostgreSQL 15 أو أعلى
--   ريديس v5 أو أعلى
+-   Node.js v18 या उच्चतर
+-   PostgreSQL 15 या उच्चतर
+-   रेडिस v5 या उच्चतर
 
-### خطوات التثبيت
+### स्थापना चरण
 
-1.  اتبع خطوات التثبيت[خدمة الخلفية](api-service.md)أولاً
+1.  स्थापना चरणों का पालन करें[बैक-एंड सेवा](api-service.md)पहला
 
-2.  بيئة الإعداد
+2.  सेटअप वातावरण
 
-    إعادة تسمية`.env.example`ل`.env`
+    नाम बदलें`.env.example`को`.env`
 
-    يجب أن تكون قيم المضيف والمنفذ/الأصل مختلفة عن خدمة واجهة برمجة التطبيقات
+    होस्ट और पोर्ट/ओरिजिन मान एपीआई सेवा से भिन्न होने चाहिए
 
-### كيف تركض
+### कैसे चलायें
 
-1.  يبني
+1.  निर्माण
 
 ```bash
 npm run admin:build
 ```
 
-2.  تشغيل التطبيق
+2.  ऐप चलाएँ
 
 ```bash
 npm run admin:start
 ```
 
--   أو وضع التطوير
+-   या विकास मोड
 
 ```bash
 npm run admin:dev
 ```
 
-### لقطات الشاشة
+### स्क्रीनशॉट
 
 ![Dashboard](/assets/admin/dashboard.png)
 

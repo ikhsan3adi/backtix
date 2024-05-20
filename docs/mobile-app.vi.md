@@ -1,7 +1,35 @@
 ## Ứng dụng di động (Flutter)
 
--   [tiếng Indonesia](mobile-app.md)
--   [Tiếng Anh](mobile-app.en.md)
+<a href="./mobile-app.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.en.md">
+  <img alt="Translation" src="https://img.shields.io/badge/English-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.zh-CN.md">
+  <img alt="Translation" src="https://img.shields.io/badge/简体中文-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.ja.md">
+  <img alt="Translation" src="https://img.shields.io/badge/日本語-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.ar.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Arabic_عربي-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.pt.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Português-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.es.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Español-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.fr.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Français-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.vi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Tiếng_Việt-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
+<a href="./mobile-app.hi.md">
+  <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
+</a>
 
 ### yêu cầu hệ thống
 
@@ -94,7 +122,7 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         -alias upload
         ```
 
-        -   :warning: Thay thế`<path-to-project>`với đường dẫn thư mục dự án ứng dụng.
+        -   :cảnh báo: Thay thế`<path-to-project>`với đường dẫn thư mục dự án ứng dụng.
             Ví dụ:
 
         ```bash
