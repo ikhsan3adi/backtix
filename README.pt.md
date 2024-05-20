@@ -50,7 +50,7 @@ Resumidamente as principais características do aplicativo:
 
 -   Pesquisa de eventos próximos:
 
-    Os usuários podem pesquisar eventos que ocorrem mais próximos de sua localização. Este recurso permite que os usuários descubram e participem de eventos organizados em torno deles.
+    Os usuários podem pesquisar eventos que ocorrem mais próximos de sua localização. Este recurso permite que os usuários descubram e participem de eventos realizados perto deles.
 
 -   Compra de ingressos com Midtrans:
 
