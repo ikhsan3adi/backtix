@@ -50,7 +50,7 @@ Briefly the main features of the application:
 
 -   Nearby Event Search:
 
-    Users can search for events taking place closest to their location. This feature allows users to discover and participate in events organized around them.
+    Users can search for events taking place closest to their location. This feature allows users to discover and participate in events held near them.
 
 -   Ticket Purchase with Midtrans:
 
