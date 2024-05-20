@@ -114,7 +114,7 @@ npm run db:seed
 
     -   `CREATE CREDENTIALS`वापस, चयन करें`OAuth client ID`
 
-    -   चुनना`Web application`आवेदन का प्रकार, एक नाम दें और`Authorized JavaScript origins`चित्र के अनुसार (यदि लोकलहोस्ट का उपयोग कर रहे हैं), तो सहेजें/बनाएं
+    -   चुनना`Web application`आवेदन का प्रकार, एक नाम दें और`Authorized JavaScript origins`चित्र के अनुसार (यदि लोकलहोस्ट का उपयोग कर रहे हैं), तो सहेजें/बनाएँ
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
