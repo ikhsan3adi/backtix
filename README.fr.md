@@ -50,7 +50,7 @@ En bref les principales fonctionnalités de l'application :
 
 -   Recherche d'événements à proximité :
 
-    Les utilisateurs peuvent rechercher des événements se déroulant le plus près de leur emplacement. Cette fonctionnalité permet aux utilisateurs de découvrir et de participer aux événements organisés autour d'eux.
+    Les utilisateurs peuvent rechercher des événements se déroulant le plus près de leur emplacement. Cette fonctionnalité permet aux utilisateurs de découvrir et de participer à des événements organisés à proximité de chez eux.
 
 -   Achat de billets avec Midtrans :
 
