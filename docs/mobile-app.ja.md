@@ -55,7 +55,7 @@ dart run build_runner build
 
 #### セットアップ環境
 
-1.  名前を変更する`.env.example`に`.env`
+1.  名前の変更`.env.example`に`.env`
 
 2.  カスタマイズ`API_BASE_URL`ファイルの数`.env`
 
