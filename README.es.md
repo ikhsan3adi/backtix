@@ -50,13 +50,13 @@ Brevemente las principales características de la aplicación:
 
 -   Búsqueda de eventos cercanos:
 
-    Los usuarios pueden buscar eventos que tengan lugar más cerca de su ubicación. Esta función permite a los usuarios descubrir y participar en eventos organizados en torno a ellos.
+    Los usuarios pueden buscar eventos que tengan lugar más cerca de su ubicación. Esta función permite a los usuarios descubrir y participar en eventos que se celebran cerca de ellos.
 
 -   Compra de boletos con Midtrans:
 
     Esta aplicación brinda servicios de venta de boletos en línea utilizando la pasarela de pago Midtrans. Los usuarios pueden comprar fácilmente entradas para eventos de su interés con una variedad de cómodas opciones de pago.
 
--   Crear un evento con aprobación del administrador:
+-   Crear un evento con la aprobación del administrador:
 
     Los usuarios que quieran realizar eventos pueden crearlos a través de la aplicación. Sin embargo, el evento se publicará después de obtener la aprobación del administrador. Esto es para garantizar la calidad y relevancia de los eventos mostrados en la plataforma.
 
