@@ -122,7 +122,7 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         -alias upload
         ```
 
-        -   :cảnh báo: Thay thế`<path-to-project>`với đường dẫn thư mục dự án ứng dụng.
+        -   :warning: Thay thế`<path-to-project>`với đường dẫn thư mục dự án ứng dụng.
             Ví dụ:
 
         ```bash

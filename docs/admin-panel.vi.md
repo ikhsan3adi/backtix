@@ -49,7 +49,7 @@
 
     Giá trị máy chủ & cổng/nguồn gốc phải khác với dịch vụ api
 
-### Làm thế nào để chạy
+### Cách chạy
 
 1.  Xây dựng
 

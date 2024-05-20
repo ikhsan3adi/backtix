@@ -1,4 +1,4 @@
-# Quay lạiTix
+# BackTix
 
 > Ứng dụng bán vé và sự kiện mã nguồn mở
 
@@ -50,7 +50,7 @@ Tóm tắt các tính năng chính của ứng dụng:
 
 -   Tìm kiếm sự kiện lân cận:
 
-    Người dùng có thể tìm kiếm các sự kiện diễn ra gần vị trí của họ nhất. Tính năng này cho phép người dùng khám phá và tham gia vào các sự kiện được tổ chức xung quanh họ.
+    Người dùng có thể tìm kiếm các sự kiện diễn ra gần vị trí của họ nhất. Tính năng này cho phép người dùng khám phá và tham gia các sự kiện được tổ chức gần họ.
 
 -   Mua vé với Midtrans:
 
@@ -106,9 +106,9 @@ Tóm tắt các tính năng chính của ứng dụng:
   <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
 </a>
 
-## Cài đặt &_Làm thế nào để chạy_
+## Cài đặt &_Cách chạy_
 
-[Dịch vụ API phụ trợ](docs/api-service.md)
+[Dịch vụ API phía sau](docs/api-service.md)
 
 [Bảng quản trị](docs/admin-panel.md)
 
