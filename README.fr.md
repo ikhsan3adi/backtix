@@ -2,7 +2,7 @@
 
 > Application open source pour événements et billetterie
 
-<img src="assets/social_preview.png">
+<img src="assets/social_preview.png" alt="BackTix">
 
 <a href="./README.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -34,6 +34,58 @@
 <a href="./README.hi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+
+* * *
+
+## Code source
+
+<a href="https://github.com/ikhsan3adi/backtix-app">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+<a href="https://github.com/ikhsan3adi/backtix-service">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+* * *
+
+> [!IMPORTANT]
+>
+> ## Installation et_Comment courir_
+>
+> [Service API back-end](docs/api-service.md)
+>
+> [Panneau d'administration](docs/admin-panel.md)
+>
+> [Application mobile](docs/mobile-app.md)
+>
+> * * *
+>
+> [!NOTE]
+>
+> ## Pile technologique
+>
+> -   Service API/back-end
+>
+>     -   [NestJS10](https://nestjs.com/)Manuscrit
+>     -   ORM Prisma
+>     -   PostgreSQL
+>     -   Rédis
+>     -   Swagger (documentation API)
+>
+> -   Panneau d'administration Web (Monorepo avec service API)
+>
+>     -   [SvelteKit 2](https://kit.svelte.dev/)Manuscrit
+>     -   Composant d'interface utilisateur Flowbite
+>     -   CSS vent arrière
+>
+> -   Application mobile
+>
+>     -   [Flutter 3](https://flutter.dev/)
+>         -   BLoC
+>         -   Congelé
+>         -   Rénovation
+>         -   fpdart
 
 * * *
 
@@ -72,44 +124,6 @@ En bref les principales fonctionnalités de l'application :
 
     Avec l'aide de_service d'arrière-plan_(Android et IOS), les utilisateurs recevront des notifications en temps réel sur le statut de l'événement, le statut de retrait, les achats et ventes de billets.
 
-## Pile technologique
+## Soutenez et faites un don
 
--   Service API/back-end
-
-    -   [NestJS10](https://nestjs.com/)Manuscrit
-    -   ORM Prisma
-    -   PostgreSQL
-    -   Rédis
-    -   Swagger (documentation API)
-
--   Panneau d'administration Web (Monorepo avec service API)
-
-    -   [SvelteKit 2](https://kit.svelte.dev/)Manuscrit
-    -   Composant d'interface utilisateur Flowbite
-    -   CSS vent arrière
-
--   Application mobile
-
-    -   [Flutter 3](https://flutter.dev/)
-        -   BLoC
-        -   Congelé
-        -   Rénovation
-        -   fpdart
-
-## Code source
-
-<a href="https://github.com/ikhsan3adi/backtix-app">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-<a href="https://github.com/ikhsan3adi/backtix-service">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-## Installation et_Comment courir_
-
-[Service API back-end](docs/api-service.md)
-
-[Panneau d'administration](docs/admin-panel.md)
-
-[Application mobile](docs/mobile-app.md)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)

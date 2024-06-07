@@ -75,7 +75,7 @@ DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=pub
 npx prisma migrate deploy
 ```
 
--   Exécutez le semoir de base de données pour créer des utilisateurs`superadmin`
+-   Exécutez le seeder de base de données pour créer des utilisateurs`superadmin`
 
 ```bash
 npm run db:seed
