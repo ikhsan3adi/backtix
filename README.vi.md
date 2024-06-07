@@ -1,8 +1,8 @@
-# BackTix
+# Quay lạiTix
 
 > Ứng dụng bán vé và sự kiện mã nguồn mở
 
-<img src="assets/social_preview.png">
+<img src="assets/social_preview.png" alt="BackTix">
 
 <a href="./README.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -34,6 +34,58 @@
 <a href="./README.hi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+
+* * *
+
+## Mã nguồn
+
+<a href="https://github.com/ikhsan3adi/backtix-app">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+<a href="https://github.com/ikhsan3adi/backtix-service">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+* * *
+
+> [!QUAN TRỌNG]
+>
+> ## Cài đặt &_Làm thế nào để chạy_
+>
+> [Dịch vụ API phụ trợ](docs/api-service.md)
+>
+> [Bảng quản trị](docs/admin-panel.md)
+>
+> [Ứng dụng di động](docs/mobile-app.md)
+>
+> * * *
+>
+> [!GHI CHÚ]
+>
+> ## ngăn xếp công nghệ
+>
+> -   Dịch vụ API/back-end
+>
+>     -   [NestJS 10](https://nestjs.com/)Bản đánh máy
+>     -   Prisma ORM
+>     -   PostgreSQL
+>     -   làm lại
+>     -   Swagger(tài liệu API)
+>
+> -   Web bảng quản trị (Monorepo với dịch vụ API)
+>
+>     -   [Mảnh dẻKit 2](https://kit.svelte.dev/)Bản đánh máy
+>     -   Thành phần giao diện người dùng Flowbite
+>     -   CSS theo gió
+>
+> -   Ứng dụng di động
+>
+>     -   [Rung 3](https://flutter.dev/)
+>         -   BLoC
+>         -   đông lạnh
+>         -   Trang bị thêm
+>         -   fpdart
 
 * * *
 
@@ -72,44 +124,6 @@ Tóm tắt các tính năng chính của ứng dụng:
 
     Với sự giúp đỡ của_dịch vụ nền_(Android & iOS), người dùng sẽ nhận được thông báo theo thời gian thực về trạng thái sự kiện, trạng thái rút tiền, mua và bán vé.
 
-## ngăn xếp công nghệ
+## Hỗ trợ và quyên góp
 
--   Dịch vụ API/back-end
-
-    -   [NestJS 10](https://nestjs.com/)Bản đánh máy
-    -   Prisma ORM
-    -   PostgreSQL
-    -   Làm lại
-    -   Swagger(tài liệu API)
-
--   Web bảng quản trị (Monorepo với dịch vụ API)
-
-    -   [Mảnh dẻKit 2](https://kit.svelte.dev/)Bản đánh máy
-    -   Thành phần giao diện người dùng Flowbite
-    -   CSS theo gió
-
--   Ứng dụng di động
-
-    -   [Rung 3](https://flutter.dev/)
-        -   BLoC
-        -   đông lạnh
-        -   Trang bị thêm
-        -   fpdart
-
-## Mã nguồn
-
-<a href="https://github.com/ikhsan3adi/backtix-app">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-<a href="https://github.com/ikhsan3adi/backtix-service">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-## Cài đặt &_Cách chạy_
-
-[Dịch vụ API phía sau](docs/api-service.md)
-
-[Bảng quản trị](docs/admin-panel.md)
-
-[Ứng dụng di động](docs/mobile-app.md)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)

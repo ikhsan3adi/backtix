@@ -145,7 +145,7 @@ MIDTRANS_CLIENT_KEY=
 
 -   Cấu hình biến`.env`những người khác khi cần thiết.
 
-### Cách chạy
+### Làm thế nào để chạy
 
 1.  Phát ra`metadata`:
 
