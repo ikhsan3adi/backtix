@@ -146,7 +146,7 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         }
         ```
 
-    -   टर्मिनल खोलें, फ़ोल्डर पर जाएँ`android`एप्लिकेशन प्रोजेक्ट में, फिर निम्न कमांड चलाएँ:
+    -   टर्मिनल खोलें, फ़ोल्डर पर नेविगेट करें`android`एप्लिकेशन प्रोजेक्ट में, फिर निम्न कमांड चलाएँ:
 
         ```bash
         ./gradlew signingReport

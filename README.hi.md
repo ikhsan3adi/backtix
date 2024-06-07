@@ -2,7 +2,7 @@
 
 > ओपन सोर्स इवेंट और टिकटिंग ऐप
 
-<img src="assets/social_preview.png">
+<img src="assets/social_preview.png" alt="BackTix">
 
 <a href="./README.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -34,6 +34,58 @@
 <a href="./README.hi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+
+* * *
+
+## सोर्स कोड
+
+<a href="https://github.com/ikhsan3adi/backtix-app">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+<a href="https://github.com/ikhsan3adi/backtix-service">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+* * *
+
+> [!महत्वपूर्ण]
+>
+> ## स्थापना एवं_कैसे चलायें_
+>
+> [बैक-एंड एपीआई सेवा](docs/api-service.md)
+>
+> [व्यवस्थापक पैनल](docs/admin-panel.md)
+>
+> [मोबाइल एप्लिकेशन](docs/mobile-app.md)
+>
+> * * *
+>
+> [!टिप्पणी]
+>
+> ## टेक स्टैक
+>
+> -   एपीआई सेवा/बैक-एंड
+>
+>     -   [नेस्टजेएस 10](https://nestjs.com/)टाइपप्रति
+>     -   प्रिज्मा ओआरएम
+>     -   पोस्टग्रेएसक्यूएल
+>     -   रेडिस
+>     -   स्वैगर(एपीआई दस्तावेज़)
+>
+> -   व्यवस्थापक पैनल वेब (एपीआई सेवा के साथ मोनोरेपो)
+>
+>     -   [स्वेलटेकिट 2](https://kit.svelte.dev/)टाइपप्रति
+>     -   फ़्लोबाइट यूआई घटक
+>     -   टेलविंड सीएसएस
+>
+> -   मोबाइल एप्लिकेशन
+>
+>     -   [फड़फड़ाना 3](https://flutter.dev/)
+>         -   ब्लॉक
+>         -   freezed
+>         -   पुराना वापस
+>         -   fpdart
 
 * * *
 
@@ -72,44 +124,6 @@
 
     की मदद से_पृष्ठभूमि सेवा_(एंड्रॉइड और आईओएस), उपयोगकर्ताओं को घटना की स्थिति, निकासी की स्थिति, टिकट खरीद और बिक्री के बारे में वास्तविक समय सूचनाएं प्राप्त होंगी।
 
-## टेक स्टैक
+## समर्थन करें और दान करें
 
--   एपीआई सेवा/बैक-एंड
-
-    -   [नेस्टजेएस 10](https://nestjs.com/)टाइपप्रति
-    -   प्रिज्मा ओआरएम
-    -   पोस्टग्रेएसक्यूएल
-    -   रेडिस
-    -   स्वैगर(एपीआई दस्तावेज़)
-
--   व्यवस्थापक पैनल वेब (एपीआई सेवा के साथ मोनोरेपो)
-
-    -   [स्वेलटेकिट 2](https://kit.svelte.dev/)टाइपप्रति
-    -   फ़्लोबाइट यूआई घटक
-    -   टेलविंड सीएसएस
-
--   मोबाइल एप्लिकेशन
-
-    -   [फड़फड़ाना 3](https://flutter.dev/)
-        -   ब्लॉक
-        -   freezed
-        -   पुराना वापस
-        -   fpdart
-
-## सोर्स कोड
-
-<a href="https://github.com/ikhsan3adi/backtix-app">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-<a href="https://github.com/ikhsan3adi/backtix-service">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-## स्थापना एवं_कैसे चलायें_
-
-[बैक-एंड एपीआई सेवा](docs/api-service.md)
-
-[व्यवस्थापक पैनल](docs/admin-panel.md)
-
-[मोबाइल एप्लिकेशन](docs/mobile-app.md)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
