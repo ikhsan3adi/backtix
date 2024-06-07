@@ -2,7 +2,7 @@
 
 > 开源活动和票务应用程序
 
-<img src="assets/social_preview.png">
+<img src="assets/social_preview.png" alt="BackTix">
 
 <a href="./README.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -34,6 +34,58 @@
 <a href="./README.hi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+
+* * *
+
+## 源代码
+
+<a href="https://github.com/ikhsan3adi/backtix-app">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+<a href="https://github.com/ikhsan3adi/backtix-service">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+* * *
+
+> [！重要的!]
+>
+> ## 安装 ＆_如何跑_
+>
+> [后端API服务](docs/api-service.md)
+>
+> [管理面板](docs/admin-panel.md)
+>
+> [移动应用](docs/mobile-app.md)
+>
+> * * *
+>
+> [！笔记!]
+>
+> ## 技术堆栈
+>
+> -   API服务/后端
+>
+>     -   [巢JS 10](https://nestjs.com/)打字稿
+>     -   棱镜 ORM
+>     -   PostgreSQL
+>     -   雷迪斯
+>     -   Swagger（API 文档）
+>
+> -   管理面板网络（带有 API 服务的 Monorepo）
+>
+>     -   [SvelteKit 2](https://kit.svelte.dev/)打字稿
+>     -   Flowbite UI 组件
+>     -   顺风CSS
+>
+> -   移动应用
+>
+>     -   [颤动3](https://flutter.dev/)
+>         -   集团
+>         -   冷冻
+>         -   改造
+>         -   飞镖
 
 * * *
 
@@ -72,44 +124,6 @@
 
     在...的帮助下_后台服务_（Android & IOS），用户将收到有关活动状态、提现状态、购票和售票的实时通知。
 
-## 技术堆栈
+## 支持和捐赠
 
--   API服务/后端
-
-    -   [巢JS 10](https://nestjs.com/)打字稿
-    -   棱镜 ORM
-    -   PostgreSQL
-    -   雷迪斯
-    -   Swagger（API 文档）
-
--   管理面板网络（带有 API 服务的 Monorepo）
-
-    -   [SvelteKit 2](https://kit.svelte.dev/)打字稿
-    -   Flowbite UI 组件
-    -   顺风 CSS
-
--   移动应用
-
-    -   [颤动3](https://flutter.dev/)
-        -   集团
-        -   冷冻
-        -   改造
-        -   飞镖
-
-## 源代码
-
-<a href="https://github.com/ikhsan3adi/backtix-app">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-<a href="https://github.com/ikhsan3adi/backtix-service">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-## 安装 ＆_如何跑_
-
-[后端API服务](docs/api-service.md)
-
-[管理面板](docs/admin-panel.md)
-
-[移动应用](docs/mobile-app.md)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)

@@ -1,4 +1,4 @@
-## 移动应用程序（颤动）
+## 移动应用程序（颤振）
 
 <a href="./mobile-app.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
