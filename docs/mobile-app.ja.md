@@ -1,4 +1,4 @@
-## モバイルアプリ (Flutter)
+## モバイルアプリ（Flutter）
 
 <a href="./mobile-app.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -39,7 +39,7 @@
 
 ### インストール手順
 
-1.  リポジトリのクローン/抽出
+1.  リポジトリのクローン作成/抽出
 
 2.  依存関係をインストールします。
 
@@ -61,7 +61,7 @@ dart run build_runner build
 
 #### Midtransクライアントキー
 
--   の前の手順を完了します[バックエンド サービス - ミッドトランス サーバーとクライアント キーのセットアップ](api-service.md#setup-midtrans-server--client-key)
+-   前の手順を完了します[バックエンド サービス - ミッドトランス サーバーとクライアント キーのセットアップ](api-service.md#setup-midtrans-server--client-key)
 
 -   翻訳**クライアントキー**私が与えた`.env`
 
@@ -74,7 +74,7 @@ MIDTRANS_CLIENT_KEY=Mid-client-xxxx
 
 #### 設定**Google サインイン**クライアントID
 
--   の前の手順を完了します[バックエンド サービス - Google サインイン サーバーとクライアント ID のセットアップ](api-service.md#setup-google-sign-in-server--client-id)
+-   前の手順を完了します[バックエンド サービス - Google サインイン サーバーとクライアント ID のセットアップ](api-service.md#setup-google-sign-in-server--client-id)
 
 -   翻訳`Web Client ID`そして`Server Client ID`私が与えた`.env`
 
