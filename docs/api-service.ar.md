@@ -75,7 +75,7 @@ DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=pub
 npx prisma migrate deploy
 ```
 
--   قم بتشغيل بذارة قاعدة البيانات لإنشاء المستخدمين`superadmin`
+-   قم بتشغيل بذارة قاعدة البيانات لإنشاء مستخدمين`superadmin`
 
 ```bash
 npm run db:seed
