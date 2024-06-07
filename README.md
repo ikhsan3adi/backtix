@@ -2,7 +2,7 @@
 
 > Open Source Event & Ticketing App
 
-<img src="assets/social_preview.png">
+<img src="assets/social_preview.png" alt="BackTix">
 
 <a href="./README.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -34,6 +34,57 @@
 <a href="./README.hi.md">
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
+
+---
+
+## Source Code
+
+<a href="https://github.com/ikhsan3adi/backtix-app">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+<a href="https://github.com/ikhsan3adi/backtix-service">
+  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
+</a>
+
+---
+> [!IMPORTANT]
+>
+> ## Instalasi & _How to run_
+>
+> [Back-end API service](docs/api-service.md)
+>
+> [Admin-panel](docs/admin-panel.md)
+>
+> [Mobile app](docs/mobile-app.md)
+>
+---
+> [!NOTE]
+>
+> ## Tech Stack
+>
+> - API service / back-end
+>
+>   - [NestJS 10](https://nestjs.com/) TypeScript
+>   - Prisma ORM
+>   - PostgreSQL
+>   - Redis
+>   - Swagger(API docs)
+>
+> - Admin panel web (Monorepo with API service)
+>
+>   - [SvelteKit 2](https://kit.svelte.dev/) TypeScript
+>   - Flowbite UI component
+>   - Tailwind CSS
+>
+> - Mobile app
+>
+>   - [Flutter 3](https://flutter.dev/)
+>     - BLoC
+>     - Freezed
+>     - Retrofit
+>     - fpdart
+>
 
 ---
 
@@ -72,45 +123,7 @@ singkat fitur-fitur utama aplikasi:
 
   Dengan bantuan _background service_ (Android & IOS), pengguna akan menerima notifikasi real-time tentang status acara, status penarikan, pembelian dan penjualan tiket.
 
-## Tech Stack
+## Dukungan dan donasi
 
-- API service / back-end
-
-    - [NestJS 10](https://nestjs.com/) TypeScript
-    - Prisma ORM
-    - PostgreSQL
-    - Redis
-    - Swagger(API docs)
-
-- Admin panel web (Monorepo with API service)
-
-    - [SvelteKit 2](https://kit.svelte.dev/) TypeScript
-    - Flowbite UI component
-    - Tailwind CSS
-
-- Mobile app
-
-    - [Flutter 3](https://flutter.dev/)
-      - BLoC
-      - Freezed
-      - Retrofit
-      - fpdart
-
-## Source Code
-
-<a href="https://github.com/ikhsan3adi/backtix-app">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-<a href="https://github.com/ikhsan3adi/backtix-service">
-  <img height='25em' src="https://img.shields.io/badge/BackTix_Api_Service & Admin panel-ea2845?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" />
-</a>
-
-## Instalasi & _How to run_
-
-[Back-end API service](docs/api-service.md)
-
-[Admin-panel](docs/admin-panel.md)
-
-[Mobile app](docs/mobile-app.md)
-
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)
+[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
