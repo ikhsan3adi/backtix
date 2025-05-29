@@ -1,6 +1,6 @@
-# AtrásTix
+# Backtix
 
-> Aplicación de código abierto para eventos y venta de entradas
+> Evento de código abierto y aplicación de boletos
 
 <img src="assets/social_preview.png" alt="BackTix">
 
@@ -51,13 +51,13 @@
 
 > [!IMPORTANTE]
 >
-> ## Instalación y_Como correr_
+> ## Instalación y_Cómo correr_
 >
-> [Servicio API de back-end](docs/api-service.md)
+> [Servicio de API de fondo](docs/api-service.md)
 >
-> [Panel de administrador](docs/admin-panel.md)
+> [Panel administrativo](docs/admin-panel.md)
 >
-> [Aplicación movil](docs/mobile-app.md)
+> [Aplicación móvil](docs/mobile-app.md)
 >
 > * * *
 >
@@ -65,65 +65,65 @@
 >
 > ## Pila de tecnología
 >
-> -   Servicio API/back-end
+> -   Servicio de API / back-end
 >
->     -   [NestJS 10](https://nestjs.com/)Mecanografiado
->     -   Prisma ORM
->     -   PostgreSQL
->     -   Redis
->     -   Arrogancia (documentos API)
+>     -   [No 10](https://nestjs.com/)Mecanografiado
+>     -   Prisma orm
+>     -   Postgresql
+>     -   Rehacer
+>     -   Swagger (API Docs)
 >
-> -   Panel de administración web (Monorepo con servicio API)
+> -   Web del panel de administración (Monorepo con servicio API)
 >
->     -   [EsbeltoKit 2](https://kit.svelte.dev/)Mecanografiado
->     -   Componente de interfaz de usuario Flowbite
+>     -   [Svelteki 2](https://kit.svelte.dev/)Mecanografiado
+>     -   Componente de interfaz de usuario de flujo
 >     -   CSS de viento de cola
 >
-> -   Aplicación movil
+> -   Aplicación móvil
 >
->     -   [Aleteo 3](https://flutter.dev/)
+>     -   [Flutter 3](https://flutter.dev/)
 >         -   Bloque político
 >         -   Congelado
->         -   Retroadaptación
+>         -   Modernización
 >         -   fpdart
 
 * * *
 
-Esta aplicación de creación de eventos y venta de entradas en línea es una plataforma que facilita a los usuarios el acceso y la participación en diversos eventos. A continuación se muestra la descripción.
-Brevemente las principales características de la aplicación:
+La aplicación para realizar eventos y ventas de entradas en línea es una plataforma que proporciona conveniencia para que los usuarios accedan y participen en varios eventos. Aquí hay una descripción
+Características principales de la aplicación principal:
 
 -   Autenticación:
 
-    La aplicación ofrece autenticación segura a través de JSON Web Token (JWT) y Google Sign-In. Los usuarios pueden iniciar sesión fácilmente en sus cuentas con métodos de autenticación convenientes y seguros.
+    Esta aplicación ofrece autenticación segura a través de JSON Web Token (JWT) y Google Sign-In. Los usuarios pueden ingresar fácilmente a su cuenta con un método de autenticación cómodo y seguro.
 
--   Activación de cuenta por correo electrónico:
+-   Activación de la cuenta por correo electrónico:
 
     Para aumentar la seguridad y garantizar la autenticidad del usuario, la aplicación requiere la activación de la cuenta por correo electrónico. Los usuarios recibirán un código de activación para confirmar y activar su cuenta.
 
--   Búsqueda de eventos cercanos:
+-   Búsqueda de eventos más cercano:
 
-    Los usuarios pueden buscar eventos que tengan lugar más cerca de su ubicación. Esta función permite a los usuarios descubrir y participar en eventos que se celebran cerca de ellos.
+    Los usuarios pueden encontrar eventos que tienen lugar más cercano a su ubicación. Esta característica permite a los usuarios encontrar y participar en eventos celebrados a su alrededor.
 
 -   Compra de boletos con Midtrans:
 
-    Esta aplicación brinda servicios de venta de boletos en línea utilizando la pasarela de pago Midtrans. Los usuarios pueden comprar fácilmente entradas para eventos de su interés con una variedad de cómodas opciones de pago.
+    Esta aplicación proporciona servicios de venta de boletos en línea utilizando pasarelas de pago Midtrans. Los usuarios pueden comprar fácilmente boletos para eventos que están en demanda con una variedad de opciones de pago cómodas.
 
--   Crear un evento con la aprobación del administrador:
+-   Haga un evento con aprobación del administrador:
 
-    Los usuarios que quieran realizar eventos pueden crearlos a través de la aplicación. Sin embargo, el evento se publicará después de obtener la aprobación del administrador. Esto es para garantizar la calidad y relevancia de los eventos mostrados en la plataforma.
+    Los usuarios que desean celebrar un evento pueden superar la aplicación. Sin embargo, el evento se publicará después de obtener la aprobación del administrador. Esto es para garantizar la calidad y relevancia del evento que se muestra en la plataforma.
 
--   Escanee el código QR para el creador de eventos:
+-   Escaneo de código QR para el fabricante de eventos:
 
-    Esta función permite a los creadores de eventos verificar fácilmente la asistencia de los visitantes escaneando el código QR en el boleto. Esto ayuda a una gestión eficiente de eventos y a la validación de entradas.
+    Esta característica permite al fabricante de eventos verificar fácilmente la presencia de visitantes escaneando el código QR en el boleto. Esto ayuda en la gestión de eventos y la validación de boletos de manera eficiente.
 
--   Retirar Saldo e Ingresos:
+-   Retirar saldo e ingresos:
 
-    Los creadores de eventos pueden retirar su saldo y ganancias a través de la función de retiro proporcionada por la aplicación. Esto brinda a los organizadores de eventos la flexibilidad de administrar sus resultados financieros con facilidad.
+    El fabricante de eventos puede atraer sus saldos e ingresos a través de las características de retiro proporcionadas por la solicitud. Esto proporciona flexibilidad al organizador del evento para administrar sus resultados financieros fácilmente.
 
--   Notificaciones en tiempo real
+-   Notificación en tiempo real
 
-    Con la ayuda de_servicio en segundo plano_(Android e IOS), los usuarios recibirán notificaciones en tiempo real sobre el estado del evento, el estado de los retiros, la compra y venta de boletos.
+    Con la ayuda de_servicio de antecedentes_(Android e iOS), los usuarios recibirán notificaciones en tiempo real sobre el estado del evento, el estado de retiro, la compra y la venta de entradas.
 
-## Apoya y dona
+## Apoyo y donación
 
-[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/ikhsan3adi?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)

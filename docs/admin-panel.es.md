@@ -1,4 +1,4 @@
-## Panel de administración (SvelteKit)
+## Panel de administración (Sveltekit)
 
 <a href="./admin-panel.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -41,15 +41,15 @@ Asegúrese de que su sistema cumpla con los siguientes requisitos antes de comen
 
 ### Pasos de instalación
 
-1.  Siga los pasos de instalación[Servicio de fondo](api-service.md)primero
+1.  Sigue los pasos de instalación[Servicio de fondo](api-service.md)por adelantado
 
 2.  Entorno de configuración
 
     Rebautizar`.env.example`a`.env`
 
-    Los valores de host y puerto/origen deben ser diferentes a los del servicio api
+    Los valores de host y puerto / origen deben ser diferentes del servicio API
 
-### Como correr
+### Cómo correr
 
 1.  Construir
 
@@ -57,7 +57,7 @@ Asegúrese de que su sistema cumpla con los siguientes requisitos antes de comen
 npm run admin:build
 ```
 
-2.  Ejecutar aplicación
+2.  Ejecutar la aplicación
 
 ```bash
 npm run admin:start
