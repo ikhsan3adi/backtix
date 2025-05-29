@@ -1,4 +1,4 @@
-## 管理面板（SvelteKit）
+## 管理面板（Sveltekit）
 
 <a href="./admin-panel.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -33,23 +33,23 @@
 
 ### 系统要求
 
-开始安装之前，请确保您的系统满足以下要求：
+在开始安装之前，请确保您的系统满足以下要求：
 
--   Node.js v18 或更高版本
--   PostgreSQL 15 或更高版本
--   Redis v5 或更高版本
+-   node.js v18或更高
+-   Postgresql 15或更高
+-   REDIS V5或更高
 
 ### 安装步骤
 
-1.  按照安装步骤操作[后端服务](api-service.md)第一的
+1.  按照安装步骤[后端服务](api-service.md)提前
 
 2.  设置环境
 
-    改名`.env.example`到`.env`
+    重命名`.env.example`到`.env`
 
-    主机&端口/origin值必须与api服务不同
+    主机和端口 /原点值必须与API服务不同
 
-### 如何跑
+### 如何运行
 
 1.  建造
 
@@ -69,7 +69,7 @@ npm run admin:start
 npm run admin:dev
 ```
 
-### 截图
+### 屏幕截图
 
 ![Dashboard](/assets/admin/dashboard.png)
 

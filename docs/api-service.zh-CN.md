@@ -1,4 +1,4 @@
-## 后端服务（NestJS）
+## 后端服务（Nestjs）
 
 <a href="./api-service.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,22 +31,22 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-它包括一个管理面板应用程序
+包括管理申请面板
 
     apps/api
     apps/admin-panel
 
 ### 系统要求
 
-开始安装之前，请确保您的系统满足以下要求：
+在开始安装之前，请确保您的系统满足以下要求：
 
--   Node.js v18 或更高版本
--   PostgreSQL 15 或更高版本
--   Redis v5 或更高版本
+-   node.js v18或更高
+-   Postgresql 15或更高
+-   REDIS V5或更高
 
 ### 安装步骤
 
-1.  克隆/提取存储库
+1.  克隆/提取库
 
 2.  安装依赖项：
 
@@ -56,11 +56,11 @@ npm i
 
 #### 设置环境
 
--   改名`.env.example`到`.env`
+-   重命名`.env.example`到`.env`
 
 #### 设置数据库
 
--   安排`DATABASE_URL`的`.env`
+-   放`DATABASE_URL`的`.env`
 
 ```sh
 DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=public"
@@ -69,40 +69,40 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=pu
 DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=public"
 ```
 
--   运行迁移以创建所需的表
+-   运行迁移以制作所需的表
 
 ```bash
 npx prisma migrate deploy
 ```
 
--   运行数据库播种程序来创建用户`superadmin`
+-   运行数据库播种机以创建用户`superadmin`
 
 ```bash
 npm run db:seed
 ```
 
-#### 设置**谷歌登录**服务器和客户端 ID
+#### 设置**Google登录**服务器和客户端ID
 
--   创建一个新项目[谷歌云控制台](https://console.cloud.google.com/projectcreate)
+-   创建一个新项目[Google Cloud Console](https://console.cloud.google.com/projectcreate)
 
--   创建完项目后，选择它`APIs & Services`，然后选择`OAuth consent screen`在左侧
+-   完成项目后，选择`APIs & Services`，然后选择`OAuth consent screen`在左侧
 
--   输入应用程序名称、电子邮件和`Developer contact information`
+-   输入应用程序的名称，电子邮件和`Developer contact information`
 
 ![Cloud Console](/assets/Screenshot_1.png)
 
 -   **服务器**客户ID
 
-    -   选择`Credentials`在左侧边栏中，单击`CREATE CREDENTIALS`， 选择`OAuth client ID`
+    -   选择`Credentials`在左侧栏上，单击`CREATE CREDENTIALS`， 选择`OAuth client ID`
 
     ![Cloud Console](/assets/Screenshot_2.png)
 
 
--   选择`Web application`应用程序类型，beri nama lalu 保存/创建
+-   选择`Web application`申请类型，beri nama lalu保存/创建
 
     ![Cloud Console](/assets/Screenshot_3.png)
 
--   翻译`Client ID`和`Client secret`我给了`.env`
+-   翻译`Client ID`和`Client secret`文件`.env`
 
     ```sh
     # google oauth
@@ -110,15 +110,15 @@ npm run db:seed
     SERVER_GOOGLE_CLIENT_SECRET=
     ```
 
--   **网络应用程序**客户ID
+-   **Web应用程序**客户ID
 
-    -   `CREATE CREDENTIALS`返回，选择`OAuth client ID`
+    -   `CREATE CREDENTIALS`回来，选择`OAuth client ID`
 
-    -   选择`Web application`应用程序类型，给出名称和`Authorized JavaScript origins`如图所示（如果使用本地主机），然后保存/创建
+    -   选择`Web application`申请类型，名称和`Authorized JavaScript origins`像图片中（如果使用localhost），然后保存/创建
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
-    -   翻译`Client ID`和`Client secret`我给了`.env`
+    -   翻译`Client ID`和`Client secret`文件`.env`
 
     ```sh
     # optional web only
@@ -126,12 +126,12 @@ npm run db:seed
     WEB_APP_GOOGLE_CLIENT_SECRET=
     ```
 
-    -   点击`DOWNLOAD JSON`并保存客户端 ID。 Web 客户端 ID 将在 flutter 移动应用程序中使用。
+    -   点击`DOWNLOAD JSON`并保存客户端ID。 Web客户端ID将在移动应用程序扑朔迷离中使用。
 
-#### 设置 midtrans 服务器和客户端密钥
+#### 设置中型服务器和客户端密钥
 
--   去[仪表板中转](https://dashboard.midtrans.com/)，选择环境`sandbox`（推荐）阿塔乌`production`
--   进入到`Settings`>`Access Keys`，然后将客户端和服务器密钥复制到文件中`.env`
+-   去[仪表板中型](https://dashboard.midtrans.com/)，选择环境`sandbox`（建议）或`production`
+-   进入`Settings`>`Access Keys`，然后将客户端和服务器键复制到文件`.env`
 
 ```sh
 # sandbox
@@ -143,9 +143,9 @@ MIDTRANS_SERVER_KEY=
 MIDTRANS_CLIENT_KEY=
 ```
 
--   可变配置`.env`其他根据需要。
+-   可变配置`.env`其他根据需要的。
 
-### 如何跑
+### 如何运行
 
 1.  产生`metadata`:
 
@@ -159,15 +159,15 @@ npm run metadata --workspace=@backtix-service/api
 npm run start
 ```
 
--   发展模式
+-   开发模式
 
 ```bash
 npm run start:dev
 ```
 
-2.  Swagger API 文档
+2.  Swagger API文档
 
--   打开http&#x3A;//localhost:3000/api/docs（调整基本url）
+-   打开http：// localhost：3000/fire/docs（调整基本URL）
 
 3.  测试（可选）
 
@@ -175,6 +175,6 @@ npm run start:dev
 npm test
 ```
 
-### 截图
+### 屏幕截图
 
 ![Swagger API Docs](/assets/swagger.png)

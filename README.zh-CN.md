@@ -1,6 +1,6 @@
-# 回帖
+# backtix
 
-> 开源活动和票务应用程序
+> 开源事件和票务应用
 
 <img src="assets/social_preview.png" alt="BackTix">
 
@@ -51,7 +51,7 @@
 
 > [！重要的!]
 >
-> ## 安装 ＆_如何跑_
+> ## 安装 ＆_如何运行_
 >
 > [后端API服务](docs/api-service.md)
 >
@@ -65,65 +65,65 @@
 >
 > ## 技术堆栈
 >
-> -   API服务/后端
+> -   API服务 /后端
 >
->     -   [巢JS 10](https://nestjs.com/)打字稿
->     -   棱镜 ORM
->     -   PostgreSQL
->     -   雷迪斯
->     -   Swagger（API 文档）
+>     -   [没有10](https://nestjs.com/)打字稿
+>     -   prisma orm
+>     -   Postgresql
+>     -   Redis
+>     -   Swagger（API文档）
 >
-> -   管理面板网络（带有 API 服务的 Monorepo）
+> -   管理面板Web（带有API服务的MonorePo）
 >
->     -   [SvelteKit 2](https://kit.svelte.dev/)打字稿
->     -   Flowbite UI 组件
->     -   顺风CSS
+>     -   [Svelteki 2](https://kit.svelte.dev/)打字稿
+>     -   Flowbite UI组件
+>     -   尾风CSS
 >
 > -   移动应用
 >
 >     -   [颤动3](https://flutter.dev/)
 >         -   集团
->         -   冷冻
+>         -   冻结
 >         -   改造
->         -   飞镖
+>         -   fpdart
 
 * * *
 
-这个在线活动创建和门票销售应用程序是一个让用户可以轻松访问和参与各种活动的平台。以下是说明
-简要介绍该应用程序的主要特点：
+进行活动和在线门票销售的应用程序是一个平台，为用户提供便利，以访问和参与各种活动。这是一个描述
+简短的主要应用程序功能：
 
 -   验证：
 
-    该应用程序通过 JSON Web Token (JWT) 和 Google Sign-In 提供安全身份验证。用户可以通过方便、安全的身份验证方法轻松登录自己的帐户。
+    该应用程序通过JSON Web令牌（JWT）和Google登录提供安全的身份验证。用户可以通过舒适且安全的身份验证方法轻松地输入其帐户。
 
 -   通过电子邮件激活帐户：
 
-    为了提高安全性并确保用户的真实性，该应用程序需要通过电子邮件激活帐户。用户将收到激活码以确认并激活其帐户。
+    为了提高安全性并确保用户的真实性，应用程序需要通过电子邮件激活帐户。用户将收到激活代码以确认和激活其帐户。
 
--   附近活动搜索：
+-   最近的事件搜索：
 
-    用户可以搜索离他们最近的位置发生的事件。此功能允许用户发现并参与在他们附近举行的活动。
+    用户可以找到最接近其位置的事件。此功能使用户可以查找并参与周围举行的活动。
 
--   通过 Midtrans 购买门票：
+-   与中期购买票：
 
-    该应用程序使用 Midtrans 支付网关提供在线门票销售服务。用户可以通过多种便捷的支付方式轻松购买感兴趣的活动门票。
+    该应用程序使用中型托管支付网关提供在线机票销售服务。用户可以轻松购买需要有各种舒适付款选项的活动的门票。
 
--   创建经管理员批准的活动：
+-   通过管理员批准进行活动：
 
-    想要举办活动的用户可以通过应用程序创建活动。不过，该活动将在获得管理员批准后发布。这是为了确保平台上显示的事件的质量和相关性。
+    想要举办活动的用户可以通过应用程序实现。但是，该活动将在获得管理员的批准后发布。这是为了确保平台上显示的事件的质量和相关性。
 
--   扫描二维码查看活动创建者：
+-   QR代码扫描活动制造商：
 
-    此功能允许活动创建者通过扫描门票上的二维码轻松验证访客出席情况。这有助于高效的活动管理和票证验证。
+    此功能使活动制造商可以通过扫描机票上的QR码来轻松验证访问者的存在。这有助于有效的事件管理和票务验证。
 
--   提款余额和收入：
+-   提取余额和收入：
 
-    活动创建者可以通过应用程序提供的提款功能提取其余额和收入。这使活动组织者能够灵活地轻松管理其财务业绩。
+    活动制造商可以通过应用程序提供的提款功能来吸引其余额和收入。这为活动的组织者提供了灵活性，可以轻松管理其财务业绩。
 
 -   实时通知
 
-    在...的帮助下_后台服务_（Android & IOS），用户将收到有关活动状态、提现状态、购票和售票的实时通知。
+    借助_背景服务_（Android＆iOS），用户将收到有关活动状态，提款状态，购买和票务销售的实时通知。
 
 ## 支持和捐赠
 
-[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/ikhsan3adi?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
