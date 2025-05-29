@@ -1,6 +1,6 @@
-# Quay lạiTix
+# Backtix
 
-> Ứng dụng bán vé và sự kiện mã nguồn mở
+> Sự kiện nguồn mở và ứng dụng bán vé
 
 <img src="assets/social_preview.png" alt="BackTix">
 
@@ -53,9 +53,9 @@
 >
 > ## Cài đặt &_Làm thế nào để chạy_
 >
-> [Dịch vụ API phụ trợ](docs/api-service.md)
+> [Dịch vụ API back-end](docs/api-service.md)
 >
-> [Bảng quản trị](docs/admin-panel.md)
+> [Quản trị viên](docs/admin-panel.md)
 >
 > [Ứng dụng di động](docs/mobile-app.md)
 >
@@ -63,67 +63,67 @@
 >
 > [!GHI CHÚ]
 >
-> ## ngăn xếp công nghệ
+> ## Tech Stack
 >
-> -   Dịch vụ API/back-end
+> -   Dịch vụ API / Back-End
 >
->     -   [NestJS 10](https://nestjs.com/)Bản đánh máy
->     -   Prisma ORM
->     -   PostgreSQL
->     -   làm lại
->     -   Swagger(tài liệu API)
+>     -   [Không 10](https://nestjs.com/)TYPEXTRIPT
+>     -   Prisma Orm
+>     -   Postgresql
+>     -   Redis
+>     -   Swagger (tài liệu API)
 >
-> -   Web bảng quản trị (Monorepo với dịch vụ API)
+> -   Web bảng quản trị (monorepo với dịch vụ API)
 >
->     -   [Mảnh dẻKit 2](https://kit.svelte.dev/)Bản đánh máy
->     -   Thành phần giao diện người dùng Flowbite
->     -   CSS theo gió
+>     -   [Svelteki 2](https://kit.svelte.dev/)TYPEXTRIPT
+>     -   Thành phần UI Flowbite
+>     -   Tailwind CSS
 >
 > -   Ứng dụng di động
 >
 >     -   [Rung 3](https://flutter.dev/)
->         -   BLoC
->         -   đông lạnh
+>         -   Khối
+>         -   Đóng băng
 >         -   Trang bị thêm
 >         -   fpdart
 
 * * *
 
-Ứng dụng tạo sự kiện và bán vé trực tuyến này là một nền tảng giúp người dùng dễ dàng truy cập và tham gia vào các sự kiện khác nhau. Sau đây là mô tả
-Tóm tắt các tính năng chính của ứng dụng:
+Ứng dụng để tạo ra các sự kiện và bán vé trực tuyến là một nền tảng cung cấp sự tiện lợi cho người dùng truy cập và tham gia vào các sự kiện khác nhau. Đây là một mô tả
+Các tính năng ứng dụng chính ngắn:
 
 -   Xác thực:
 
-    Ứng dụng cung cấp xác thực an toàn thông qua JSON Web Token (JWT) và Đăng nhập bằng Google. Người dùng có thể dễ dàng đăng nhập vào tài khoản của mình bằng các phương thức xác thực thuận tiện và an toàn.
+    Ứng dụng này cung cấp xác thực an toàn thông qua mã thông báo JSON Web (JWT) và Google Đăng nhập. Người dùng có thể dễ dàng nhập tài khoản của họ bằng phương pháp xác thực thoải mái và an toàn.
 
--   Kích hoạt tài khoản qua Email:
+-   Kích hoạt tài khoản qua email:
 
-    Để tăng tính bảo mật và đảm bảo tính xác thực của người dùng, ứng dụng yêu cầu kích hoạt tài khoản qua email. Người dùng sẽ nhận được mã kích hoạt để xác nhận và kích hoạt tài khoản của mình.
+    Để tăng bảo mật và đảm bảo tính xác thực của người dùng, ứng dụng yêu cầu kích hoạt tài khoản qua email. Người dùng sẽ nhận được mã kích hoạt để xác nhận và kích hoạt tài khoản của họ.
 
--   Tìm kiếm sự kiện lân cận:
+-   Tìm kiếm sự kiện gần nhất:
 
-    Người dùng có thể tìm kiếm các sự kiện diễn ra gần vị trí của họ nhất. Tính năng này cho phép người dùng khám phá và tham gia các sự kiện được tổ chức gần họ.
+    Người dùng có thể tìm thấy các sự kiện diễn ra gần nhất với vị trí của họ. Tính năng này cho phép người dùng tìm và tham gia vào các sự kiện được tổ chức xung quanh họ.
 
--   Mua vé với Midtrans:
+-   Mua vé với midtrans:
 
-    Ứng dụng này cung cấp dịch vụ bán vé trực tuyến sử dụng cổng thanh toán Midtrans. Người dùng có thể dễ dàng mua vé cho các sự kiện quan tâm với nhiều tùy chọn thanh toán thuận tiện.
+    Ứng dụng này cung cấp dịch vụ bán vé trực tuyến sử dụng cổng thanh toán Midtrans. Người dùng có thể dễ dàng mua vé cho các sự kiện đang có nhu cầu với nhiều tùy chọn thanh toán thoải mái.
 
--   Tạo sự kiện với sự phê duyệt của quản trị viên:
+-   Tạo một sự kiện với sự chấp thuận của quản trị viên:
 
-    Người dùng muốn tổ chức sự kiện có thể tạo chúng thông qua ứng dụng. Tuy nhiên, sự kiện sẽ được công bố sau khi nhận được sự chấp thuận của quản trị viên. Điều này nhằm đảm bảo chất lượng và mức độ phù hợp của các sự kiện được hiển thị trên nền tảng.
+    Người dùng muốn tổ chức một sự kiện có thể thông qua ứng dụng. Tuy nhiên, sự kiện này sẽ được công bố sau khi nhận được sự chấp thuận từ quản trị viên. Điều này là để đảm bảo chất lượng và mức độ phù hợp của sự kiện được hiển thị trên nền tảng.
 
--   Quét mã QR để tạo sự kiện:
+-   Quét mã QR cho nhà sản xuất sự kiện:
 
-    Tính năng này cho phép người tạo sự kiện dễ dàng xác minh sự tham dự của khách truy cập bằng cách quét mã QR trên vé. Điều này giúp quản lý sự kiện hiệu quả và xác nhận vé.
+    Tính năng này cho phép nhà sản xuất sự kiện dễ dàng xác minh sự hiện diện của khách truy cập bằng cách quét mã QR trên vé. Điều này giúp quản lý sự kiện và xác nhận vé một cách hiệu quả.
 
 -   Rút số dư và thu nhập:
 
-    Người tạo sự kiện có thể rút số dư và thu nhập của mình thông qua tính năng rút tiền do ứng dụng cung cấp. Điều này mang lại cho người tổ chức sự kiện sự linh hoạt để quản lý kết quả tài chính của họ một cách dễ dàng.
+    Nhà sản xuất sự kiện có thể thu hút số dư và thu nhập của họ thông qua các tính năng rút tiền do ứng dụng cung cấp. Điều này cung cấp sự linh hoạt cho người tổ chức sự kiện để quản lý kết quả tài chính của họ một cách dễ dàng.
 
--   Thông báo theo thời gian thực
+-   Thông báo thời gian thực
 
-    Với sự giúp đỡ của_dịch vụ nền_(Android & iOS), người dùng sẽ nhận được thông báo theo thời gian thực về trạng thái sự kiện, trạng thái rút tiền, mua và bán vé.
+    Với sự giúp đỡ của_dịch vụ nền_(Android & iOS), người dùng sẽ nhận được thông báo thời gian thực về tình trạng của sự kiện, tình trạng rút tiền, mua và bán vé.
 
 ## Hỗ trợ và quyên góp
 
-[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/ikhsan3adi?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)

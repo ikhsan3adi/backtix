@@ -1,4 +1,4 @@
-## Bảng quản trị (SvelteKit)
+## Bảng quản trị (Sveltekit)
 
 <a href="./admin-panel.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,23 +31,23 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-### yêu cầu hệ thống
+### Yêu cầu hệ thống
 
-Đảm bảo hệ thống của bạn đáp ứng các yêu cầu sau trước khi bắt đầu cài đặt:
+Đảm bảo hệ thống của bạn đáp ứng các yêu cầu sau khi bắt đầu cài đặt:
 
 -   Node.js v18 trở lên
--   PostgreSQL 15 trở lên
+-   PostgreSql 15 trở lên
 -   Redis v5 trở lên
 
 ### Các bước cài đặt
 
-1.  Thực hiện theo các bước cài đặt[Dịch vụ phụ trợ](api-service.md)Đầu tiên
+1.  Thực hiện theo các bước cài đặt[Dịch vụ back-end](api-service.md)trước
 
 2.  Môi trường thiết lập
 
     Đổi tên`.env.example`ĐẾN`.env`
 
-    Giá trị máy chủ & cổng/nguồn gốc phải khác với dịch vụ api
+    Giá trị máy chủ & cổng / nguồn gốc phải khác với dịch vụ API
 
 ### Làm thế nào để chạy
 

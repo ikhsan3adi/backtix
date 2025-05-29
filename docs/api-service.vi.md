@@ -31,22 +31,22 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-Nó bao gồm một ứng dụng bảng quản trị
+Bao gồm bảng ứng dụng quản trị viên trong đó
 
     apps/api
     apps/admin-panel
 
-### yêu cầu hệ thống
+### Yêu cầu hệ thống
 
-Đảm bảo hệ thống của bạn đáp ứng các yêu cầu sau trước khi bắt đầu cài đặt:
+Đảm bảo hệ thống của bạn đáp ứng các yêu cầu sau khi bắt đầu cài đặt:
 
 -   Node.js v18 trở lên
--   PostgreSQL 15 trở lên
+-   PostgreSql 15 trở lên
 -   Redis v5 trở lên
 
 ### Các bước cài đặt
 
-1.  Sao chép/trích xuất kho lưu trữ
+1.  Bản sao/Trích xuất kho lưu trữ
 
 2.  Cài đặt phụ thuộc:
 
@@ -58,9 +58,9 @@ npm i
 
 -   Đổi tên`.env.example`ĐẾN`.env`
 
-#### Thiết lập cơ sở dữ liệu
+#### Cơ sở dữ liệu thiết lập
 
--   Sắp xếp`DATABASE_URL`Của`.env`
+-   Bộ`DATABASE_URL`Của`.env`
 
 ```sh
 DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=public"
@@ -69,40 +69,40 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=pu
 DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=public"
 ```
 
--   Chạy quá trình di chuyển để tạo các bảng cần thiết
+-   Chạy di chuyển để thực hiện bảng cần thiết
 
 ```bash
 npx prisma migrate deploy
 ```
 
--   Chạy trình gieo hạt cơ sở dữ liệu để tạo người dùng`superadmin`
+-   Chạy bộ gieo hạt cơ sở dữ liệu để tạo người dùng`superadmin`
 
 ```bash
 npm run db:seed
 ```
 
-#### Cài đặt**Đăng nhập Google**ID máy chủ và máy khách
+#### Cài đặt**Google đăng nhập**ID máy chủ & khách hàng
 
--   Tạo một dự án mới tại[Bảng điều khiển đám mây của Google](https://console.cloud.google.com/projectcreate)
+-   Tạo một dự án mới tại[Bảng điều khiển đám mây Google](https://console.cloud.google.com/projectcreate)
 
--   Khi bạn đã tạo xong một dự án, hãy chọn nó`APIs & Services`, sau đó chọn`OAuth consent screen`ở bên trái
+-   Sau khi hoàn thành thực hiện dự án, chọn`APIs & Services`, sau đó chọn`OAuth consent screen`bên trái
 
--   Nhập tên ứng dụng, email và`Developer contact information`
+-   Nhập tên của ứng dụng, email và`Developer contact information`
 
 ![Cloud Console](/assets/Screenshot_1.png)
 
--   **Máy chủ**ID khách hàng
+-   **Máy chủ**ID máy khách
 
-    -   Lựa chọn`Credentials`ở thanh bên trái, hãy nhấp vào`CREATE CREDENTIALS`, lựa chọn`OAuth client ID`
+    -   Chọn`Credentials`Ở thanh bên trái, nhấp vào`CREATE CREDENTIALS`, chọn`OAuth client ID`
 
     ![Cloud Console](/assets/Screenshot_2.png)
 
 
--   Lựa chọn`Web application`loại ứng dụng, lưu/tạo beri nama lalu
+-   Chọn`Web application`loại ứng dụng, beri nama lalu lưu/tạo
 
     ![Cloud Console](/assets/Screenshot_3.png)
 
--   Dịch`Client ID`Và`Client secret`tôi đã cho`.env`
+-   Dịch`Client ID`Và`Client secret`Tệp của`.env`
 
     ```sh
     # google oauth
@@ -110,15 +110,15 @@ npm run db:seed
     SERVER_GOOGLE_CLIENT_SECRET=
     ```
 
--   **Ứng dụng web**ID khách hàng
+-   **Ứng dụng web**ID máy khách
 
-    -   `CREATE CREDENTIALS`quay lại, chọn`OAuth client ID`
+    -   `CREATE CREDENTIALS`Quay lại, chọn`OAuth client ID`
 
-    -   Lựa chọn`Web application`loại ứng dụng, đặt tên và`Authorized JavaScript origins`như trong hình (nếu dùng localhost) thì lưu/tạo
+    -   Chọn`Web application`Loại ứng dụng, tên và`Authorized JavaScript origins`Giống như trong hình (nếu sử dụng localhost), sau đó lưu/tạo
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
-    -   Dịch`Client ID`Và`Client secret`tôi đã cho`.env`
+    -   Dịch`Client ID`Và`Client secret`Tệp của`.env`
 
     ```sh
     # optional web only
@@ -126,12 +126,12 @@ npm run db:seed
     WEB_APP_GOOGLE_CLIENT_SECRET=
     ```
 
-    -   Nhấp chuột`DOWNLOAD JSON`và lưu ID khách hàng. ID khách hàng web sẽ được sử dụng trong ứng dụng di động rung.
+    -   Nhấp`DOWNLOAD JSON`và lưu id máy khách. ID máy khách web sẽ được sử dụng trong Flutter ứng dụng di động.
 
-#### Thiết lập khóa máy chủ và máy khách midtrans
+#### Thiết lập khóa máy chủ & máy chủ Midtrans
 
--   Đi đến[Bảng điều khiển Midtrans](https://dashboard.midtrans.com/), chọn môi trường`sandbox`(được khuyến nghị) tại`production`
--   Nhập vào`Settings`>`Access Keys`, sau đó sao chép khóa máy khách và máy chủ vào tệp`.env`
+-   Đi đến[Bảng điều khiển midtrans](https://dashboard.midtrans.com/), chọn môi trường`sandbox`(đề nghị) hoặc`production`
+-   Đi vào`Settings`>`Access Keys`, sau đó sao chép khóa máy khách và máy chủ vào tệp`.env`
 
 ```sh
 # sandbox
@@ -165,9 +165,9 @@ npm run start
 npm run start:dev
 ```
 
-2.  Tài liệu API Swagger
+2.  DOCS API Swagger
 
--   Mở http&#x3A;//localhost:3000/api/docs (điều chỉnh url cơ sở)
+-   Mở http&#x3A; // localhost: 3000/fire/Docs (điều chỉnh URL cơ sở)
 
 3.  Kiểm tra (tùy chọn)
 
