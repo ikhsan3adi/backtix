@@ -1,6 +1,6 @@
-# BackTix
+# Backtix
 
-> Aplicativo de código aberto para eventos e ingressos
+> Evento de código aberto e aplicativo de bilheteria
 
 <img src="assets/social_preview.png" alt="BackTix">
 
@@ -37,7 +37,7 @@
 
 * * *
 
-## Código fonte
+## Código -fonte
 
 <a href="https://github.com/ikhsan3adi/backtix-app">
   <img height='25em' src="https://img.shields.io/badge/BackTix_App-027DFD?style=for-the-badge&logo=github&logoColor=white" title="ikhsan3adi" alt="source code" />
@@ -51,11 +51,11 @@
 
 > [!IMPORTANTE]
 >
-> ## Instalação e_Como correr_
+> ## Instalação &_Como correr_
 >
 > [Serviço de API de back-end](docs/api-service.md)
 >
-> [Painel de administração](docs/admin-panel.md)
+> [Admin-pain](docs/admin-panel.md)
 >
 > [Aplicativo móvel](docs/mobile-app.md)
 >
@@ -65,65 +65,65 @@
 >
 > ## Pilha de tecnologia
 >
-> -   Serviço de API/back-end
+> -   Serviço de API / back-end
 >
->     -   [NestJS 10](https://nestjs.com/)Texto datilografado
+>     -   [Não 10](https://nestjs.com/)TypeScript
 >     -   Prisma ORM
->     -   PostgreSQL
+>     -   PostGresql
 >     -   Redis
->     -   Swagger (documentos da API)
+>     -   Swagger (API Docs)
 >
-> -   Web do painel de administração (Monorepo com serviço API)
+> -   Web do painel de administrador (monorepo com serviço de API)
 >
->     -   [SvelteKit 2](https://kit.svelte.dev/)Texto datilografado
->     -   Componente de interface do usuário Flowbite
->     -   CSS do vento favorável
+>     -   [Svelteki 2](https://kit.svelte.dev/)TypeScript
+>     -   Componente da interface do usuário Flowbite
+>     -   Tailwind CSS
 >
 > -   Aplicativo móvel
 >
->     -   [Vibração 3](https://flutter.dev/)
+>     -   [Flutter 3](https://flutter.dev/)
 >         -   Bloco
 >         -   Congelado
->         -   Reforma
->         -   fpdart
+>         -   Adaptação
+>         -   fpDart
 
 * * *
 
-Este aplicativo online de criação de eventos e venda de ingressos é uma plataforma que facilita o acesso e a participação dos usuários em diversos eventos. A seguir está a descrição
-Resumidamente as principais características do aplicativo:
+O aplicativo para fazer eventos e vendas de ingressos on -line é uma plataforma que fornece conveniência para os usuários acessarem e participarem de vários eventos. Aqui está uma descrição
+Recursos de aplicativo principal curtos:
 
 -   Autenticação:
 
-    O aplicativo oferece autenticação segura via JSON Web Token (JWT) e Google Sign-In. Os usuários podem fazer login facilmente em suas contas com métodos de autenticação convenientes e seguros.
+    Este aplicativo oferece autenticação segura através do JSON Web Token (JWT) e do Google assinando. Os usuários podem inserir facilmente sua conta com um método de autenticação confortável e seguro.
 
--   Ativação de conta por e-mail:
+-   Ativação da conta por e -mail:
 
-    Para aumentar a segurança e garantir a autenticidade do usuário, o aplicativo exige a ativação da conta via e-mail. Os usuários receberão um código de ativação para confirmar e ativar sua conta.
+    Para aumentar a segurança e garantir a autenticidade do usuário, o aplicativo requer ativação da conta por e -mail. Os usuários receberão um código de ativação para confirmar e ativar sua conta.
 
--   Pesquisa de eventos próximos:
+-   Pesquisa de evento mais próxima:
 
-    Os usuários podem pesquisar eventos que ocorrem mais próximos de sua localização. Este recurso permite que os usuários descubram e participem de eventos realizados perto deles.
+    Os usuários podem encontrar eventos que ocorrem mais próximos de sua localização. Esse recurso permite que os usuários encontrem e participem de eventos realizados ao seu redor.
 
 -   Compra de ingressos com Midtrans:
 
-    Este aplicativo fornece serviços de venda de ingressos on-line usando o gateway de pagamento Midtrans. Os usuários podem comprar facilmente ingressos para eventos de interesse com uma variedade de opções de pagamento convenientes.
+    Este aplicativo fornece serviços de vendas de ingressos on -line usando gateways de pagamento MIDTRANS. Os usuários podem comprar ingressos facilmente para eventos que estão em demanda com uma variedade de opções de pagamento confortáveis.
 
--   Criando um evento com aprovação do administrador:
+-   Faça um evento com aprovação do administrador:
 
-    Os usuários que desejam realizar eventos podem criá-los por meio do aplicativo. No entanto, o evento será publicado após aprovação do administrador. Isso é para garantir a qualidade e relevância dos eventos exibidos na plataforma.
+    Os usuários que desejam realizar um evento podem passar pelo aplicativo. No entanto, o evento será publicado após a aprovação do administrador. Isso é para garantir a qualidade e a relevância do evento exibido na plataforma.
 
--   Digitalize o código QR para o Event Creator:
+-   Código QR Scan para o fabricante de eventos:
 
-    Este recurso permite que os criadores de eventos verifiquem facilmente a presença dos visitantes, digitalizando o código QR no ingresso. Isso ajuda no gerenciamento eficiente de eventos e na validação de ingressos.
+    Esse recurso permite que o fabricante de eventos verifique facilmente a presença de visitantes digitalizando o código QR no ticket. Isso ajuda no gerenciamento de eventos e na validação de ingressos com eficiência.
 
--   Retirar Saldo e Renda:
+-   Retirar saldo e renda:
 
-    Os criadores de eventos podem sacar seu saldo e ganhos por meio do recurso de saque fornecido pelo aplicativo. Isso dá aos organizadores de eventos a flexibilidade para gerenciar seus resultados financeiros com facilidade.
+    O fabricante de eventos pode atrair seus saldos e renda através dos recursos de retirada fornecidos pelo aplicativo. Isso fornece flexibilidade ao organizador do evento para gerenciar seus resultados financeiros facilmente.
 
--   Notificações em tempo real
+-   Notificação em tempo real
 
-    Com a ajuda de_serviço em segundo plano_(Android e IOS), os usuários receberão notificações em tempo real sobre o status do evento, status de retirada, compras e vendas de ingressos.
+    Com a ajuda de_serviço de fundo_(Android & iOS), os usuários receberão notificações em tempo real sobre o status do evento, status de retirada, compra e venda de ingressos.
 
-## Apoie e doe
+## Apoio e doação
 
-[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/ikhsan3adi?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)

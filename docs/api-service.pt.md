@@ -1,4 +1,4 @@
-## Serviço de back-end (NestJS)
+## Serviço de back-end (Nestjs)
 
 <a href="./api-service.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,22 +31,22 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-Inclui um aplicativo de painel de administração
+Inclui o painel de aplicativos de administrador nele
 
     apps/api
     apps/admin-panel
 
-### Requisitos de sistema
+### Requisitos do sistema
 
-Certifique-se de que seu sistema atenda aos seguintes requisitos antes de iniciar a instalação:
+Verifique se o seu sistema atende aos seguintes requisitos antes de iniciar a instalação:
 
 -   Node.js v18 ou superior
--   PostgreSQL 15 ou superior
--   Redis v5 ou superior
+-   PostgreSql 15 ou superior
+-   Redis V5 ou superior
 
 ### Etapas de instalação
 
-1.  Clonar/extrair repositório
+1.  Repositório de clone/extrato
 
 2.  Instale dependências:
 
@@ -60,7 +60,7 @@ npm i
 
 #### Banco de dados de configuração
 
--   Arranjo`DATABASE_URL`De`.env`
+-   Definir`DATABASE_URL`De`.env`
 
 ```sh
 DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=public"
@@ -69,40 +69,40 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=pu
 DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=public"
 ```
 
--   Execute a migração para criar as tabelas necessárias
+-   Execute a migração para fazer a tabela necessária
 
 ```bash
 npx prisma migrate deploy
 ```
 
--   Execute o semeador de banco de dados para criar usuários`superadmin`
+-   Execute a semente de banco de dados para criar um usuário`superadmin`
 
 ```bash
 npm run db:seed
 ```
 
-#### Configurar**Login do Google**ID do servidor e do cliente
+#### Configurar**Google Entrar**Servidor e ID do cliente
 
--   Crie um novo projeto em[Console do Google Cloud](https://console.cloud.google.com/projectcreate)
+-   Crie um novo projeto em[Google Cloud Console](https://console.cloud.google.com/projectcreate)
 
--   Quando terminar de criar um projeto, selecione-o`APIs & Services`e selecione`OAuth consent screen`no lado esquerdo
+-   Depois de terminar de fazer o projeto, selecione`APIs & Services`, então escolha`OAuth consent screen`à esquerda
 
--   Digite o nome do aplicativo, e-mail e`Developer contact information`
+-   Digite o nome do aplicativo, email e`Developer contact information`
 
 ![Cloud Console](/assets/Screenshot_1.png)
 
--   **Servidor**ID do Cliente
+-   **Servidor**ID do cliente
 
-    -   Selecione`Credentials`na barra lateral esquerda, clique em`CREATE CREDENTIALS`, selecione`OAuth client ID`
+    -   Escolher`Credentials`Na barra lateral esquerda, clique`CREATE CREDENTIALS`, escolher`OAuth client ID`
 
     ![Cloud Console](/assets/Screenshot_2.png)
 
 
--   Selecione`Web application`tipo de aplicativo, beri nama lalu salvar/criar
+-   Escolher`Web application`Tipo de aplicativo, beri nama lalu salvar/criar
 
     ![Cloud Console](/assets/Screenshot_3.png)
 
--   Tradução`Client ID`e`Client secret`Eu dei`.env`
+-   Tradução`Client ID`E`Client secret`Arquivo de`.env`
 
     ```sh
     # google oauth
@@ -110,15 +110,15 @@ npm run db:seed
     SERVER_GOOGLE_CLIENT_SECRET=
     ```
 
--   **Aplicativo web**ID do Cliente
+-   **Aplicativo da web**ID do cliente
 
-    -   `CREATE CREDENTIALS`voltar, selecione`OAuth client ID`
+    -   `CREATE CREDENTIALS`De volta, escolha`OAuth client ID`
 
-    -   Selecione`Web application`tipo de aplicativo, dê um nome e`Authorized JavaScript origins`como na imagem (se estiver usando localhost), então salve/crie
+    -   Escolher`Web application`Tipo de aplicativo, nome e`Authorized JavaScript origins`Como na imagem (se estiver usando localhost), salve/crie
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
-    -   Tradução`Client ID`e`Client secret`Eu dei`.env`
+    -   Tradução`Client ID`E`Client secret`Arquivo de`.env`
 
     ```sh
     # optional web only
@@ -126,12 +126,12 @@ npm run db:seed
     WEB_APP_GOOGLE_CLIENT_SECRET=
     ```
 
-    -   Clique`DOWNLOAD JSON`e salve o ID do cliente. O ID do cliente da Web será usado no aplicativo móvel flutter.
+    -   Clique`DOWNLOAD JSON`e salve ID do cliente. O ID do cliente da Web será usado no aplicativo móvel.
 
-#### Configurar servidor midtrans e chave do cliente
+#### Configurar o servidor Midtrans e a chave do cliente
 
 -   Vá para[Painel Midtrans](https://dashboard.midtrans.com/), selecione o ambiente`sandbox`(recomendado) ou`production`
--   Entrar para`Settings`>`Access Keys`e copie as chaves do cliente e do servidor para o arquivo`.env`
+-   Digitar`Settings`>`Access Keys`, então copie a chave do cliente e do servidor para o arquivo`.env`
 
 ```sh
 # sandbox
@@ -165,9 +165,9 @@ npm run start
 npm run start:dev
 ```
 
-2.  Documentos da API Swagger
+2.  Swagger API Docs
 
--   Abra http&#x3A;//localhost:3000/api/docs (ajuste o URL base)
+-   Aberto http&#x3A; // localhost: 3000/fogo/docs (ajuste o URL base)
 
 3.  Teste (opcional)
 
