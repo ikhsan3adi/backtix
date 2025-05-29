@@ -1,6 +1,6 @@
-# RetourTix
+# Backtix
 
-> Application open source pour événements et billetterie
+> Événement open source et application de billetterie
 
 <img src="assets/social_preview.png" alt="BackTix">
 
@@ -53,9 +53,9 @@
 >
 > ## Installation et_Comment courir_
 >
-> [Service API back-end](docs/api-service.md)
+> [Service API arrière](docs/api-service.md)
 >
-> [Panneau d'administration](docs/admin-panel.md)
+> [Panel d'administrateur](docs/admin-panel.md)
 >
 > [Application mobile](docs/mobile-app.md)
 >
@@ -65,65 +65,65 @@
 >
 > ## Pile technologique
 >
-> -   Service API/back-end
+> -   Service API / back-end
 >
->     -   [NestJS10](https://nestjs.com/)Manuscrit
->     -   ORM Prisma
->     -   PostgreSQL
->     -   Rédis
->     -   Swagger (documentation API)
+>     -   [N ° 10](https://nestjs.com/)Manuscrit
+>     -   Prisma orm
+>     -   Postgresql
+>     -   Redis
+>     -   Swagger (API Docs)
 >
-> -   Panneau d'administration Web (Monorepo avec service API)
+> -   WEB PANNEUX ADMINE (MonorePO avec service API)
 >
->     -   [SvelteKit 2](https://kit.svelte.dev/)Manuscrit
->     -   Composant d'interface utilisateur Flowbite
->     -   CSS vent arrière
+>     -   [Svelteki 2](https://kit.svelte.dev/)Manuscrit
+>     -   FlowBite UI Component
+>     -   CSS du vent arrière
 >
 > -   Application mobile
 >
 >     -   [Flutter 3](https://flutter.dev/)
 >         -   BLoC
->         -   Congelé
->         -   Rénovation
+>         -   Congélé
+>         -   Rénover
 >         -   fpdart
 
 * * *
 
-Cette application de création d'événements et de vente de billets en ligne est une plateforme qui permet aux utilisateurs d'accéder et de participer facilement à divers événements. Voici la description
-En bref les principales fonctionnalités de l'application :
+L'application pour la réalisation d'événements et les ventes de billets en ligne est une plate-forme qui permet aux utilisateurs d'accéder et de participer à divers événements. Voici une description
+Caractéristiques de l'application principale courtes:
 
 -   Authentification:
 
-    L'application propose une authentification sécurisée via JSON Web Token (JWT) et Google Sign-In. Les utilisateurs peuvent facilement se connecter à leurs comptes grâce à des méthodes d'authentification pratiques et sécurisées.
+    Cette application offre une authentification sûre via JSON Web Token (JWT) et Google Sign-In. Les utilisateurs peuvent facilement saisir leur compte avec une méthode d'authentification confortable et sûre.
 
--   Activation du compte par e-mail :
+-   Activation du compte par e-mail:
 
-    Pour augmenter la sécurité et garantir l'authenticité de l'utilisateur, l'application nécessite l'activation du compte par e-mail. Les utilisateurs recevront un code d'activation pour confirmer et activer leur compte.
+    Pour augmenter la sécurité et assurer l'authenticité de l'utilisateur, l'application nécessite l'activation du compte par e-mail. Les utilisateurs recevront un code d'activation pour confirmer et activer leur compte.
 
--   Recherche d'événements à proximité :
+-   Recherche d'événements la plus proche:
 
-    Les utilisateurs peuvent rechercher des événements se déroulant le plus près de leur emplacement. Cette fonctionnalité permet aux utilisateurs de découvrir et de participer à des événements organisés à proximité de chez eux.
+    Les utilisateurs peuvent trouver des événements qui se déroulent le plus près de leur emplacement. Cette fonctionnalité permet aux utilisateurs de trouver et de participer à des événements organisés autour d'eux.
 
--   Achat de billets avec Midtrans :
+-   Achat de billets avec Midtrans:
 
-    Cette application fournit des services de vente de billets en ligne via la passerelle de paiement Midtrans. Les utilisateurs peuvent facilement acheter des billets pour des événements qui les intéressent grâce à diverses options de paiement pratiques.
+    Cette application fournit des services de vente de billets en ligne à l'aide de passerelles de paiement MidTrans. Les utilisateurs peuvent facilement acheter des billets pour des événements qui sont en demande avec une variété d'options de paiement confortables.
 
--   Création d'un événement avec l'approbation de l'administrateur :
+-   Faites un événement avec l'approbation de l'administrateur:
 
-    Les utilisateurs qui souhaitent organiser des événements peuvent les créer via l'application. Cependant, l'événement sera publié après avoir obtenu l'approbation de l'administrateur. Il s’agit de garantir la qualité et la pertinence des événements affichés sur la plateforme.
+    Les utilisateurs qui souhaitent organiser un événement peuvent se réaliser via l'application. Cependant, l'événement sera publié après avoir obtenu l'approbation de l'administrateur. Il s'agit d'assurer la qualité et la pertinence de l'événement affiché sur la plate-forme.
 
--   Scannez le code QR pour le créateur d'événement :
+-   SCAND CODE QR pour le fabricant d'événements:
 
-    Cette fonctionnalité permet aux créateurs d'événements de vérifier facilement la présence des visiteurs en scannant le code QR présent sur le billet. Cela contribue à une gestion efficace des événements et à la validation des billets.
+    Cette fonction permet au fabricant d'événements de vérifier facilement la présence de visiteurs en scannant le code QR sur le billet. Cela aide à la gestion des événements et à la validation des billets efficacement.
 
--   Retirer le solde et les revenus :
+-   Retirer le solde et le revenu:
 
-    Les créateurs d'événements peuvent retirer leur solde et leurs gains via la fonction de retrait fournie par l'application. Cela donne aux organisateurs d’événements la flexibilité de gérer facilement leurs résultats financiers.
+    Le fabricant d'événements peut attirer leurs soldes et leurs revenus grâce aux fonctionnalités de retrait fournies par la demande. Cela offre une flexibilité à l'organisateur de l'événement pour gérer facilement leurs résultats financiers.
 
--   Notifications en temps réel
+-   Notification en temps réel
 
-    Avec l'aide de_service d'arrière-plan_(Android et IOS), les utilisateurs recevront des notifications en temps réel sur le statut de l'événement, le statut de retrait, les achats et ventes de billets.
+    Avec l'aide de_service de fond_(Android et iOS), les utilisateurs recevront des notifications en temps réel sur l'état de l'événement, l'état de retrait, l'achat et les ventes de billets.
 
-## Soutenez et faites un don
+## Soutien et don
 
-[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/ikhsan3adi?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)

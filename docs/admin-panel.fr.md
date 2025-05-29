@@ -1,4 +1,4 @@
-## Panneau d'administration (SvelteKit)
+## Panneau d'administration (Sveltekit)
 
 <a href="./admin-panel.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,23 +31,23 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-### Configuration requise
+### Exigences du système
 
-Assurez-vous que votre système répond aux exigences suivantes avant de démarrer l'installation :
+Assurez-vous que votre système répond aux exigences suivantes avant de démarrer l'installation:
 
--   Node.js v18 ou supérieur
--   PostgreSQL 15 ou supérieur
+-   Node.js v18 ou plus
+-   Postgresql 15 ou plus
 -   Redis v5 ou supérieur
 
 ### Étapes d'installation
 
-1.  Suivez les étapes d'installation[Service back-end](api-service.md)d'abord
+1.  Suivez les étapes d'installation[Service back-end](api-service.md)à l'avance
 
 2.  Environnement de configuration
 
-    Renommer`.env.example`à`.env`
+    Rebaptiser`.env.example`à`.env`
 
-    Les valeurs d'hôte et de port/origine doivent être différentes du service API
+    Les valeurs d'hôte et de port / d'origine doivent être différentes du service API
 
 ### Comment courir
 
@@ -63,7 +63,7 @@ npm run admin:build
 npm run admin:start
 ```
 
--   ou mode développement
+-   ou mode de développement
 
 ```bash
 npm run admin:dev

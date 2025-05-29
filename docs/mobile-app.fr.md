@@ -31,23 +31,23 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-### Configuration requise
+### Exigences du système
 
-Assurez-vous que votre système répond aux exigences suivantes avant de démarrer l'installation :
+Assurez-vous que votre système répond aux exigences suivantes avant de démarrer l'installation:
 
--   SDK Flutter v3.16 ou supérieur
+-   Flutter SDK v3.16 ou plus
 
 ### Étapes d'installation
 
-1.  Cloner/extraire le référentiel
+1.  Référentiel de clones / extraits
 
-2.  Installer les dépendances :
+2.  Installez les dépendances:
 
 ```bash
 flutter pub get
 ```
 
-3.  Courir`build_runner`générer des fichiers`*.g.dart`
+3.  Courir`build_runner`Pour générer des fichiers`*.g.dart`
 
 ```bash
 dart run build_runner build
@@ -55,15 +55,15 @@ dart run build_runner build
 
 #### Environnement de configuration
 
-1.  Renommer`.env.example`à`.env`
+1.  Rebaptiser`.env.example`à`.env`
 
-2.  Personnaliser`API_BASE_URL`de fichiers`.env`
+2.  Ajuster`API_BASE_URL`déposer`.env`
 
-#### Clé client Midtrans
+#### Clé du client MidTrans
 
--   Effectuez l'étape précédente dans[Service back-end - Configuration du serveur Midtrans et de la clé client](api-service.md#setup-midtrans-server--client-key)
+-   Terminer l'étape précédente à[Service back-end - Configuration du serveur MidTrans et de la clé client](api-service.md#setup-midtrans-server--client-key)
 
--   Traduction**clé client**J'ai donné`.env`
+-   Traduction**clé client**Dossier de`.env`
 
 ```sh
 # for debug / sandbox
@@ -72,11 +72,11 @@ MIDTRANS_CLIENT_KEY_SANDBOX=SB-Mid-client-xxxx
 MIDTRANS_CLIENT_KEY=Mid-client-xxxx
 ```
 
-#### Installation**Connectez-vous à Google**identité du client
+#### Installation**Google Connectez-vous**ID client
 
--   Effectuez l'étape précédente dans[Service back-end - Configuration du serveur de connexion Google et de l'ID client](api-service.md#setup-google-sign-in-server--client-id)
+-   Terminer l'étape précédente à[Service back-end - Configuration de Google Connectez-vous en ID de serveur et client](api-service.md#setup-google-sign-in-server--client-id)
 
--   Traduction`Web Client ID`et`Server Client ID`J'ai donné`.env`
+-   Traduction`Web Client ID`Et`Server Client ID`Dossier de`.env`
 
 ```sh
 # frontend google signin / web client id
@@ -94,20 +94,20 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 </resources>
 ```
 
--   **Android**identité du client
+-   **Androïde**ID client
 
-    -   Ouvrez un terminal, accédez au répertoire du projet d'application
+    -   Ouvrez le terminal, accédez au répertoire du projet d'application
 
-    -   Accédez ensuite au dossier Android
+    -   Puis hébergez le dossier Android
 
         ```bash
         cd <path-to-project>
         cd android
         ```
 
-    -   Exécutez la commande suivante
+    -   Exécutez les commandes suivantes
 
-        -   Pour Linux et MacOS
+        -   Pour Linux et macOS
 
         ```bash
         keytool -genkey -v -keystore <path-to-project>/android/app/androidkey.jks -keyalg RSA -keysize 2048 -validity 10000 -alias keyalias
@@ -122,7 +122,7 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         -alias upload
         ```
 
-        -   :avertissement : Remplacer`<path-to-project>`avec le chemin du répertoire du projet d’application.
+        -   : Avertissement: changer`<path-to-project>`avec le répertoire des applications du projet d'application.
             Exemple:
 
         ```bash
@@ -132,9 +132,9 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         D:/ngoding/flutter/backtix-app/android/app/androidkey.jks
         ```
 
-        -   Il vous sera demandé de saisir un mot de passe, par exemple`backtix`
+        -   Il vous sera demandé de saisir un mot de passe, exemple`backtix`
 
-    -   Ouvrir des fichiers`android/app/build.gradle`puis changez cette partie :
+    -   Ouvrir le fichier`android/app/build.gradle`Modifiez ensuite cette section:
         ```gradle
         signingConfigs {
           debug {
@@ -146,25 +146,25 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         }
         ```
 
-    -   Ouvrez le terminal, accédez au dossier`android`dans le projet d'application, puis exécutez la commande suivante :
+    -   Ouvrez le terminal, pointez du dossier`android`Dans le projet d'application, puis exécutez la commande suivante:
 
         ```bash
         ./gradlew signingReport
         ```
 
-    -   Rechercher et copier des valeurs`SHA1`depuis`variant: debug`le plus haut.
+    -   Valeur de recherche et de copie`SHA1`depuis`variant: debug`le plus élevé.
 
         ![Terminal](/assets/Screenshot_5.png)
 
-    -   Aller à[Google Cloud Console](https://console.cloud.google.com)
+    -   Aller à[Console Cloud Google](https://console.cloud.google.com)
 
         ![Cloud Console](/assets/Screenshot_2.png)
 
-    -   Sélectionner`Credentials`dans la barre latérale gauche, cliquez sur`CREATE CREDENTIALS`, sélectionner`OAuth client ID`
+    -   Choisir`Credentials`Dans la barre latérale gauche, cliquez`CREATE CREDENTIALS`, choisir`OAuth client ID`
 
-    -   Sélectionner`Android`type de demande
+    -   Choisir`Android`type d'application
 
-    -   Donnez-lui un nom, et`Package name`. le nom du package peut être connu à partir du fichier`android/app/build.gradle`
+    -   Nom, et`Package name`. Le nom du package peut être vu à partir du fichier`android/app/build.gradle`
 
         ```gradle
         android {
@@ -180,4 +180,4 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 
 -   Si vous souhaitez modifier le nom du package, vous pouvez utiliser[change_app_package_name](https://pub.dev/packages/change_app_package_name)
 
--   Entrer`SHA1`de l'étape précédente, puis enregistrez/créez
+-   Entrer`SHA1`À partir de l'étape précédente, puis enregistrez / créez
