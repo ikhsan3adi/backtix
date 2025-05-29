@@ -31,12 +31,12 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-It includes an admin panel application
+Includes the admin application panel in it
 
     apps/api
     apps/admin-panel
 
-### System Requirements
+### System requirements
 
 Make sure your system meets the following requirements before starting the installation:
 
@@ -44,7 +44,7 @@ Make sure your system meets the following requirements before starting the insta
 -   PostgreSQL 15 or higher
 -   Redis v5 or higher
 
-### Installation Steps
+### Installation steps
 
 1.  Clone/extract Repository
 
@@ -60,7 +60,7 @@ npm i
 
 #### Setup database
 
--   Arrange`DATABASE_URL`Of`.env`
+-   Set`DATABASE_URL`Of`.env`
 
 ```sh
 DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=public"
@@ -69,13 +69,13 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=pu
 DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=public"
 ```
 
--   Run the migration to create the required tables
+-   Run migration to make the required table
 
 ```bash
 npx prisma migrate deploy
 ```
 
--   Run the database seeder to create users`superadmin`
+-   Run the Database Seeder to create a user`superadmin`
 
 ```bash
 npm run db:seed
@@ -85,24 +85,24 @@ npm run db:seed
 
 -   Create a new project at[Google Cloud Console](https://console.cloud.google.com/projectcreate)
 
--   Once you're done creating a project, select it`APIs & Services`, then select`OAuth consent screen`on the left side
+-   Once finished making the project, select`APIs & Services`, then choose`OAuth consent screen`on the left
 
--   Enter the application name, email and`Developer contact information`
+-   Enter the name of the application, email and`Developer contact information`
 
 ![Cloud Console](/assets/Screenshot_1.png)
 
 -   **Server**client ID
 
-    -   Select`Credentials`in the left sidebar, click`CREATE CREDENTIALS`, select`OAuth client ID`
+    -   Choose`Credentials`On the left sidebar, click`CREATE CREDENTIALS`, choose`OAuth client ID`
 
     ![Cloud Console](/assets/Screenshot_2.png)
 
 
--   Select`Web application`application type, beri nama lalu save/create
+-   Choose`Web application`application type, beri nama lalu save/create
 
     ![Cloud Console](/assets/Screenshot_3.png)
 
--   Translation`Client ID`and`Client secret`I gave`.env`
+-   Translation`Client ID`And`Client secret`File of`.env`
 
     ```sh
     # google oauth
@@ -112,13 +112,13 @@ npm run db:seed
 
 -   **Web app**client ID
 
-    -   `CREATE CREDENTIALS`back, select`OAuth client ID`
+    -   `CREATE CREDENTIALS`Back, choose`OAuth client ID`
 
-    -   Select`Web application`application type, give a name and`Authorized JavaScript origins`as in the picture (if using localhost), then save/create
+    -   Choose`Web application`Application type, name and`Authorized JavaScript origins`Like in the picture (if using localhost), then save/create
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
-    -   Translation`Client ID`and`Client secret`I gave`.env`
+    -   Translation`Client ID`And`Client secret`File of`.env`
 
     ```sh
     # optional web only
@@ -126,12 +126,12 @@ npm run db:seed
     WEB_APP_GOOGLE_CLIENT_SECRET=
     ```
 
-    -   Click`DOWNLOAD JSON`and save the Client ID. Web Client ID will be used in flutter mobile app.
+    -   Click`DOWNLOAD JSON`and save client ID. Web Client ID will be used in the mobile app flutter.
 
 #### Setup midtrans server & client key
 
--   Go to[Dashboard Midtrans](https://dashboard.midtrans.com/), select environment`sandbox`(recommended) atau`production`
--   Enter to`Settings`>`Access Keys`, then copy the client and server keys to the file`.env`
+-   Go to[Dashboard Midtrans](https://dashboard.midtrans.com/), select Environment`sandbox`(recommended) atau`production`
+-   Enter`Settings`>`Access Keys`, then copy the client and server key to the file`.env`
 
 ```sh
 # sandbox
@@ -167,7 +167,7 @@ npm run start:dev
 
 2.  Swagger API docs
 
--   Open http&#x3A;//localhost:3000/api/docs (adjust base url)
+-   Open http&#x3A; // localhost: 3000/fire/docs (adjust the base url)
 
 3.  Test (optional)
 

@@ -67,7 +67,7 @@
 >
 > -   API service / back-end
 >
->     -   [NestJS 10](https://nestjs.com/)TypeScript
+>     -   [NO 10](https://nestjs.com/)TypeScript
 >     -   Prisma ORM
 >     -   PostgreSQL
 >     -   Redis
@@ -75,7 +75,7 @@
 >
 > -   Admin panel web (Monorepo with API service)
 >
->     -   [SvelteKit 2](https://kit.svelte.dev/)TypeScript
+>     -   [Svelteki 2](https://kit.svelte.dev/)TypeScript
 >     -   Flowbite UI component
 >     -   Tailwind CSS
 >
@@ -89,41 +89,41 @@
 
 * * *
 
-This online event creation and ticket sales application is a platform that makes it easy for users to access and participate in various events. Following is the description
-Briefly the main features of the application:
+The application for making events and online ticket sales is a platform that provides convenience for users to access and participate in various events. Here is a description
+Short Main Application Features:
 
 -   Authentication:
 
-    The app offers secure authentication via JSON Web Token (JWT) and Google Sign-In. Users can easily log in to their accounts with convenient and secure authentication methods.
+    This application offers safe authentication through JSON Web Token (JWT) and Google Sign-in. Users can easily enter their account with a comfortable and safe authentication method.
 
--   Account Activation Via Email:
+-   Account activation via email:
 
-    To increase security and ensure user authenticity, the application requires account activation via email. Users will receive an activation code to confirm and activate their account.
+    To increase security and ensure the authenticity of the user, the application requires account activation via email. Users will receive an activation code to confirm and activate their account.
 
--   Nearby Event Search:
+-   Nearest Event Search:
 
-    Users can search for events taking place closest to their location. This feature allows users to discover and participate in events held near them.
+    Users can find events that take place closest to their location. This feature allows users to find and participate in events held around them.
 
--   Ticket Purchase with Midtrans:
+-   Ticket purchase with Midtrans:
 
-    This application provides online ticket sales services using the Midtrans payment gateway. Users can easily purchase tickets for events of interest with a variety of convenient payment options.
+    This application provides online ticket sales services using midtrans payment gateways. Users can easily buy tickets for events that are in demand with a variety of comfortable payment options.
 
--   Creating an Event with Admin Approval:
+-   Make an event with admin approval:
 
-    Users who want to hold events can create them through the app. However, the event will be published after getting approval from the admin. This is to ensure the quality and relevance of the events displayed on the platform.
+    Users who want to hold an event can make it through the application. However, the event will be published after getting approval from the admin. This is to ensure the quality and relevance of the event displayed on the platform.
 
--   Scan QR Code for Event Creator:
+-   QR Code Scan for the event maker:
 
-    This feature allows event creators to easily verify visitor attendance by scanning the QR code on the ticket. This helps in efficient event management and ticket validation.
+    This feature allows the event maker to easily verify the presence of visitors by scanning the QR Code on the ticket. This helps in event management and ticket validation efficiently.
 
--   Withdraw Balance and Income:
+-   Withdraw balance and income:
 
-    Event creators can withdraw their balance and earnings via the withdrawal feature provided by the application. This gives event organizers the flexibility to manage their financial results with ease.
+    The event maker can attract their balances and income through the Withdraw features provided by the application. This provides flexibility to the organizer of the event to manage their financial results easily.
 
--   Real-Time Notifications
+-   Real-time notification
 
-    With the help of_background service_(Android & IOS), users will receive real-time notifications about event status, withdrawal status, ticket purchases and sales.
+    With the help of_background service_(Android & iOS), users will receive real-time notifications about the status of the event, withdrawal status, purchase and ticket sales.
 
-## Support and donate
+## Support and donation
 
-[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
+[![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/ikhsan3adi?country.x=ID&locale.x=en_US)[![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)

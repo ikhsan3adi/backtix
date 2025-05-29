@@ -31,13 +31,13 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-### System Requirements
+### System requirements
 
 Make sure your system meets the following requirements before starting the installation:
 
 -   Flutter SDK v3.16 or higher
 
-### Installation Steps
+### Installation steps
 
 1.  Clone/extract Repository
 
@@ -57,13 +57,13 @@ dart run build_runner build
 
 1.  Rename`.env.example`to`.env`
 
-2.  Customize`API_BASE_URL`of files`.env`
+2.  Adjust`API_BASE_URL`of file`.env`
 
 #### Midtrans client key
 
--   Complete the previous step in[Back-end service - Setup midtrans server & client key](api-service.md#setup-midtrans-server--client-key)
+-   Complete the previous step at[Back-end service - Setup midtrans server & client key](api-service.md#setup-midtrans-server--client-key)
 
--   Translation**client key**I gave`.env`
+-   Translation**client key**File of`.env`
 
 ```sh
 # for debug / sandbox
@@ -74,9 +74,9 @@ MIDTRANS_CLIENT_KEY=Mid-client-xxxx
 
 #### Setup**Google sign in**client ID
 
--   Complete the previous step in[Back-end service - Setup Google sign in server & client ID](api-service.md#setup-google-sign-in-server--client-id)
+-   Complete the previous step at[Back-end service - Setup Google sign in server & client ID](api-service.md#setup-google-sign-in-server--client-id)
 
--   Translation`Web Client ID`and`Server Client ID`I gave`.env`
+-   Translation`Web Client ID`And`Server Client ID`File of`.env`
 
 ```sh
 # frontend google signin / web client id
@@ -96,25 +96,25 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 
 -   **Android**client ID
 
-    -   Open a terminal, navigate to the application project directory
+    -   Open the terminal, navigate to the Application Project Directory
 
-    -   Then navigate to the android folder
+    -   Then host to the Android folder
 
         ```bash
         cd <path-to-project>
         cd android
         ```
 
-    -   Run the following command
+    -   Run the following commands
 
-        -   For Linux and MacOS
+        -   For linux and macos
 
         ```bash
         keytool -genkey -v -keystore <path-to-project>/android/app/androidkey.jks -keyalg RSA -keysize 2048 -validity 10000 -alias keyalias
 
         ```
 
-        -   For windows
+        -   For Windows
 
         ```powershell
         keytool -genkey -v -keystore <path-to-project>/android/app/androidkey.jks ^
@@ -122,7 +122,7 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         -alias upload
         ```
 
-        -   :warning: Replace`<path-to-project>`with the application project directory path.
+        -   : Warning: Change`<path-to-project>`with the Path Directory of the Application Project.
             Example:
 
         ```bash
@@ -132,9 +132,9 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         D:/ngoding/flutter/backtix-app/android/app/androidkey.jks
         ```
 
-        -   You will be asked to enter a password, for example`backtix`
+        -   You will be asked to enter a password, example`backtix`
 
-    -   Book file`android/app/build.gradle`then change this part:
+    -   Book gave`android/app/build.gradle`Then change this section:
         ```gradle
         signingConfigs {
           debug {
@@ -146,13 +146,13 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         }
         ```
 
-    -   Open terminal, navigate to folder`android`in the application project, then run the following command:
+    -   Open the terminal, point to the folder`android`In the application project, then run the following command:
 
         ```bash
         ./gradlew signingReport
         ```
 
-    -   Search and copy values`SHA1`from`variant: debug`the highest.
+    -   Search and copy value`SHA1`from`variant: debug`the highest.
 
         ![Terminal](/assets/Screenshot_5.png)
 
@@ -160,11 +160,11 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 
         ![Cloud Console](/assets/Screenshot_2.png)
 
-    -   Select`Credentials`in the left sidebar, click`CREATE CREDENTIALS`, select`OAuth client ID`
+    -   Choose`Credentials`On the left sidebar, click`CREATE CREDENTIALS`, choose`OAuth client ID`
 
-    -   Select`Android`application type
+    -   Choose`Android`application type
 
-    -   Give it a name, and`Package name`. package name can be known from the file`android/app/build.gradle`
+    -   Name, and`Package name`. Package Name can be seen from the file`android/app/build.gradle`
 
         ```gradle
         android {
@@ -178,6 +178,6 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         ![Cloud Console](/assets/Screenshot_6.png)
 
 
--   If you want to change the package name, you can use[change_app_package_name](https://pub.dev/packages/change_app_package_name)
+-   If you want to change the package name you can use[change_app_package_name](https://pub.dev/packages/change_app_package_name)
 
--   Enter`SHA1`from the previous step, then save/create
+-   Enter`SHA1`From the previous step, then save/create

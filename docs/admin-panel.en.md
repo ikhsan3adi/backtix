@@ -31,7 +31,7 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-### System Requirements
+### System requirements
 
 Make sure your system meets the following requirements before starting the installation:
 
@@ -39,15 +39,15 @@ Make sure your system meets the following requirements before starting the insta
 -   PostgreSQL 15 or higher
 -   Redis v5 or higher
 
-### Installation Steps
+### Installation steps
 
-1.  Follow the installation steps[Back-end service](api-service.md)first
+1.  Follow the installation steps[Back-end service](api-service.md)in advance
 
 2.  Setup environment
 
     Rename`.env.example`to`.env`
 
-    The host & port / origin values ​​must be different from the api service
+    Host & port / origin values ​​must be different from API Service
 
 ### How to run
 
