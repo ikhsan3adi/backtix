@@ -1,4 +1,4 @@
-## 管理パネル (SvelteKit)
+## 管理パネル（sveltekit）
 
 <a href="./admin-panel.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,25 +31,25 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-### システム要求
+### システム要件
 
 インストールを開始する前に、システムが次の要件を満たしていることを確認してください。
 
--   Node.js v18以降
--   PostgreSQL 15 以降
--   Redis v5 以降
+-   node.js v18以降
+-   postgreSql 15以上
+-   Redis V5以上
 
 ### インストール手順
 
-1.  インストール手順に従います[バックエンドサービス](api-service.md)初め
+1.  インストール手順に従ってください[バックエンドサービス](api-service.md)あらかじめ
 
 2.  セットアップ環境
 
-    名前の変更`.env.example`に`.env`
+    名前を変更します`.env.example`に`.env`
 
-    ホストとポート/オリジンの値は API サービスとは異なる必要があります
+    ホストとポート /オリジンの値はAPIサービスとは異なる必要があります
 
-### 走り方
+### 実行方法
 
 1.  建てる
 
@@ -57,7 +57,7 @@
 npm run admin:build
 ```
 
-2.  アプリを実行する
+2.  アプリを実行します
 
 ```bash
 npm run admin:start

@@ -1,4 +1,4 @@
-## バックエンドサービス (NestJS)
+## バックエンドサービス（ネスチ）
 
 <a href="./api-service.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,24 +31,24 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-管理パネルアプリケーションが含まれています
+その中に管理者アプリケーションパネルが含まれています
 
     apps/api
     apps/admin-panel
 
-### システム要求
+### システム要件
 
 インストールを開始する前に、システムが次の要件を満たしていることを確認してください。
 
--   Node.js v18以降
--   PostgreSQL 15 以降
--   Redis v5 以降
+-   node.js v18以降
+-   postgreSql 15以上
+-   Redis V5以上
 
 ### インストール手順
 
-1.  リポジトリのクローン作成/抽出
+1.  クローン/抽出リポジトリ
 
-2.  依存関係をインストールします。
+2.  依存関係をインストールします：
 
 ```bash
 npm i
@@ -56,11 +56,11 @@ npm i
 
 #### セットアップ環境
 
--   名前の変更`.env.example`に`.env`
+-   名前を変更します`.env.example`に`.env`
 
 #### データベースのセットアップ
 
--   整える`DATABASE_URL`の`.env`
+-   セット`DATABASE_URL`の`.env`
 
 ```sh
 DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=public"
@@ -69,40 +69,40 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=pu
 DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=public"
 ```
 
--   移行を実行して必要なテーブルを作成します
+-   移行を実行して、必要なテーブルを作成します
 
 ```bash
 npx prisma migrate deploy
 ```
 
--   データベース シーダーを実行してユーザーを作成する`superadmin`
+-   データベースシーダーを実行してユーザーを作成します`superadmin`
 
 ```bash
 npm run db:seed
 ```
 
-#### 設定**Google サインイン**サーバーとクライアントID
+#### 設定**Googleがサインインします**サーバーとクライアントID
 
--   新しいプロジェクトを次の場所に作成します[Googleクラウドコンソール](https://console.cloud.google.com/projectcreate)
+-   で新しいプロジェクトを作成します[Googleクラウドコンソール](https://console.cloud.google.com/projectcreate)
 
--   プロジェクトの作成が完了したら、それを選択します`APIs & Services`を選択し、`OAuth consent screen`左側に
+-   プロジェクトの作成が終了したら、選択します`APIs & Services`、選択します`OAuth consent screen`左に
 
--   アプリケーション名、電子メールアドレスを入力し、`Developer contact information`
+-   アプリケーションの名前、電子メール、および`Developer contact information`
 
 ![Cloud Console](/assets/Screenshot_1.png)
 
 -   **サーバ**クライアントID
 
-    -   選択する`Credentials`左側のサイドバーで、 をクリックします`CREATE CREDENTIALS`、 選択する`OAuth client ID`
+    -   選ぶ`Credentials`左側のサイドバーで、クリックします`CREATE CREDENTIALS`、 選ぶ`OAuth client ID`
 
     ![Cloud Console](/assets/Screenshot_2.png)
 
 
--   選択する`Web application`アプリケーションタイプ、ベリナマラル保存/作成
+-   選ぶ`Web application`アプリケーションタイプ、beri nama lalu save/create
 
     ![Cloud Console](/assets/Screenshot_3.png)
 
--   翻訳`Client ID`そして`Client secret`私が与えた`.env`
+-   翻訳`Client ID`そして`Client secret`のファイル`.env`
 
     ```sh
     # google oauth
@@ -110,15 +110,15 @@ npm run db:seed
     SERVER_GOOGLE_CLIENT_SECRET=
     ```
 
--   **ウェブアプリ**クライアントID
+-   **Webアプリ**クライアントID
 
-    -   `CREATE CREDENTIALS`戻る、選択`OAuth client ID`
+    -   `CREATE CREDENTIALS`戻って、選択してください`OAuth client ID`
 
-    -   選択する`Web application`アプリケーションの種類、名前を付けて、`Authorized JavaScript origins`図のように（ローカルホストを使用している場合）、保存/作成します
+    -   選ぶ`Web application`アプリケーションタイプ、名前、および`Authorized JavaScript origins`写真のように（LocalHostを使用している場合）、保存/作成します
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
-    -   翻訳`Client ID`そして`Client secret`私が与えた`.env`
+    -   翻訳`Client ID`そして`Client secret`のファイル`.env`
 
     ```sh
     # optional web only
@@ -126,12 +126,12 @@ npm run db:seed
     WEB_APP_GOOGLE_CLIENT_SECRET=
     ```
 
-    -   クリック`DOWNLOAD JSON`クライアント ID を保存します。 Web クライアント ID は Flutter モバイル アプリで使用されます。
+    -   クリック`DOWNLOAD JSON`クライアントIDを保存します。 WebクライアントIDは、モバイルアプリフラッターで使用されます。
 
-#### ミッドトランスサーバーとクライアントキーのセットアップ
+#### MidTransサーバーとクライアントキーのセットアップ
 
--   に行く[ダッシュボードミッドトランス](https://dashboard.midtrans.com/)、環境を選択してください`sandbox`(推奨) アタウ`production`
--   に入力してください`Settings`＞`Access Keys`、次にクライアントキーとサーバーキーをファイルにコピーします`.env`
+-   行きます[ダッシュボードミッドトラン](https://dashboard.midtrans.com/)、環境を選択します`sandbox`（推奨）または`production`
+-   入力`Settings`>`Access Keys`、次に、クライアントとサーバーキーをファイルにコピーします`.env`
 
 ```sh
 # sandbox
@@ -143,17 +143,17 @@ MIDTRANS_SERVER_KEY=
 MIDTRANS_CLIENT_KEY=
 ```
 
--   変数設定`.env`その他必要に応じて。
+-   変数構成`.env`必要に応じて他の人。
 
-### 走り方
+### 実行方法
 
-1.  生成する`metadata`：
+1.  生成する`metadata`:
 
 ```bash
 npm run metadata --workspace=@backtix-service/api
 ```
 
-2.  アプリを実行する
+2.  アプリを実行します
 
 ```bash
 npm run start
@@ -165,9 +165,9 @@ npm run start
 npm run start:dev
 ```
 
-2.  Swagger API ドキュメント
+2.  Swagger APIドキュメント
 
--   http&#x3A;//localhost:3000/api/docs を開きます (ベース URL を調整します)。
+-   http：// localhost：3000/fire/docsを開く（ベースURLを調整）
 
 3.  テスト（オプション）
 

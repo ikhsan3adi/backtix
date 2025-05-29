@@ -1,4 +1,4 @@
-## モバイルアプリ（Flutter）
+## モバイルアプリ（フラッター）
 
 <a href="./mobile-app.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,23 +31,23 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-### システム要求
+### システム要件
 
 インストールを開始する前に、システムが次の要件を満たしていることを確認してください。
 
--   Flutter SDK v3.16 以降
+-   フラッターSDK v3.16以降
 
 ### インストール手順
 
-1.  リポジトリのクローン作成/抽出
+1.  クローン/抽出リポジトリ
 
-2.  依存関係をインストールします。
+2.  依存関係をインストールします：
 
 ```bash
 flutter pub get
 ```
 
-3.  走る`build_runner`ファイルを生成する`*.g.dart`
+3.  走る`build_runner`ファイルを生成します`*.g.dart`
 
 ```bash
 dart run build_runner build
@@ -55,15 +55,15 @@ dart run build_runner build
 
 #### セットアップ環境
 
-1.  名前の変更`.env.example`に`.env`
+1.  名前を変更します`.env.example`に`.env`
 
-2.  カスタマイズ`API_BASE_URL`ファイルの数`.env`
+2.  調整する`API_BASE_URL`ファイル`.env`
 
-#### Midtransクライアントキー
+#### MidTransクライアントキー
 
--   前の手順を完了します[バックエンド サービス - ミッドトランス サーバーとクライアント キーのセットアップ](api-service.md#setup-midtrans-server--client-key)
+-   での前のステップを完了します[バックエンドサービス - セットアップMIDTRANSサーバーとクライアントキー](api-service.md#setup-midtrans-server--client-key)
 
--   翻訳**クライアントキー**私が与えた`.env`
+-   翻訳**クライアントキー**のファイル`.env`
 
 ```sh
 # for debug / sandbox
@@ -72,11 +72,11 @@ MIDTRANS_CLIENT_KEY_SANDBOX=SB-Mid-client-xxxx
 MIDTRANS_CLIENT_KEY=Mid-client-xxxx
 ```
 
-#### 設定**Google サインイン**クライアントID
+#### 設定**Googleがサインインします**クライアントID
 
--   前の手順を完了します[バックエンド サービス - Google サインイン サーバーとクライアント ID のセットアップ](api-service.md#setup-google-sign-in-server--client-id)
+-   での前のステップを完了します[バックエンドサービス - サーバーとクライアントIDのGoogleサインをセットアップ](api-service.md#setup-google-sign-in-server--client-id)
 
--   翻訳`Web Client ID`そして`Server Client ID`私が与えた`.env`
+-   翻訳`Web Client ID`そして`Server Client ID`のファイル`.env`
 
 ```sh
 # frontend google signin / web client id
@@ -85,7 +85,7 @@ GOOGLE_CLIENT_ID=xxxx.apps.googleusercontent.com
 GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 ```
 
--   翻訳`Web Client ID`の`android/app/src/main/res/values/strings.xml`
+-   翻訳`Web Client ID``android/app/src/main/res/values/strings.xml`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -96,9 +96,9 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 
 -   **アンドロイド**クライアントID
 
-    -   ターミナルを開き、アプリケーションのプロジェクト ディレクトリに移動します。
+    -   端子を開き、アプリケーションプロジェクトディレクトリに移動します
 
-    -   次に、androidフォルダーに移動します
+    -   次に、Androidフォルダーをホストします
 
         ```bash
         cd <path-to-project>
@@ -107,14 +107,14 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 
     -   次のコマンドを実行します
 
-        -   Linux および MacOS の場合
+        -   LinuxとMacOSの場合
 
         ```bash
         keytool -genkey -v -keystore <path-to-project>/android/app/androidkey.jks -keyalg RSA -keysize 2048 -validity 10000 -alias keyalias
 
         ```
 
-        -   窓用
+        -   Windows用
 
         ```powershell
         keytool -genkey -v -keystore <path-to-project>/android/app/androidkey.jks ^
@@ -122,7 +122,7 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         -alias upload
         ```
 
-        -   :警告: 交換してください`<path-to-project>`アプリケーションプロジェクトのディレクトリパスに置き換えます。
+        -   ：警告：変更`<path-to-project>`アプリケーションプロジェクトのアプリケーションディレクトリ付き。
             例：
 
         ```bash
@@ -132,9 +132,9 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         D:/ngoding/flutter/backtix-app/android/app/androidkey.jks
         ```
 
-        -   パスワードの入力を求められます。たとえば、`backtix`
+        -   パスワードを入力するように求められます`backtix`
 
-    -   ファイルを開く`android/app/build.gradle`次に、この部分を変更します。
+    -   ファイルを開きます`android/app/build.gradle`次に、このセクションを変更します。
         ```gradle
         signingConfigs {
           debug {
@@ -146,25 +146,25 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         }
         ```
 
-    -   ターミナルを開き、フォルダーに移動します`android`アプリケーション プロジェクトで次のコマンドを実行します。
+    -   端子を開き、フォルダーを指します`android`アプリケーションプロジェクトで、次のコマンドを実行します。
 
         ```bash
         ./gradlew signingReport
         ```
 
-    -   値の検索とコピー`SHA1`から`variant: debug`最高。
+    -   値を検索してコピーします`SHA1`から`variant: debug`最高です。
 
         ![Terminal](/assets/Screenshot_5.png)
 
-    -   に行く[Googleクラウドコンソール](https://console.cloud.google.com)
+    -   行きます[Googleクラウドコンソール](https://console.cloud.google.com)
 
         ![Cloud Console](/assets/Screenshot_2.png)
 
-    -   選択する`Credentials`左側のサイドバーで、 をクリックします`CREATE CREDENTIALS`、 選択する`OAuth client ID`
+    -   選ぶ`Credentials`左側のサイドバーで、クリックします`CREATE CREDENTIALS`、 選ぶ`OAuth client ID`
 
-    -   選択する`Android`アプリケーションタイプ
+    -   選ぶ`Android`アプリケーションタイプ
 
-    -   名前を付けて、`Package name`。パッケージ名はファイルから知ることができます`android/app/build.gradle`
+    -   名前、そして`Package name`。パッケージ名はファイルから見ることができます`android/app/build.gradle`
 
         ```gradle
         android {
@@ -178,6 +178,6 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         ![Cloud Console](/assets/Screenshot_6.png)
 
 
--   パッケージ名を変更したい場合は、次を使用できます[アプリのパッケージ名変更](https://pub.dev/packages/change_app_package_name)
+-   パッケージ名を変更したい場合は、使用できます[change_app_package_name](https://pub.dev/packages/change_app_package_name)
 
--   入力`SHA1`前のステップから保存/作成します
+-   入力`SHA1`前のステップから、保存/作成します
