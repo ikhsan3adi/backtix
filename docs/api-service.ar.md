@@ -1,4 +1,4 @@
-## الخدمة الخلفية (NestJS)
+## الخدمة الخلفية (NESTJS)
 
 <a href="./api-service.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,22 +31,22 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-يتضمن تطبيق لوحة الإدارة
+يتضمن لوحة تطبيق المسؤول فيه
 
     apps/api
     apps/admin-panel
 
 ### متطلبات النظام
 
-تأكد من أن نظامك يلبي المتطلبات التالية قبل بدء التثبيت:
+تأكد من أن نظامك يفي بالمتطلبات التالية قبل بدء التثبيت:
 
--   Node.js v18 أو أعلى
+-   node.js v18 أو أعلى
 -   PostgreSQL 15 أو أعلى
--   ريديس v5 أو أعلى
+-   redis v5 أو أعلى
 
 ### خطوات التثبيت
 
-1.  استنساخ/استخراج المستودع
+1.  استنساخ/مستخلص مستودع
 
 2.  تثبيت التبعيات:
 
@@ -58,9 +58,9 @@ npm i
 
 -   إعادة تسمية`.env.example`ل`.env`
 
-#### قاعدة بيانات الإعداد
+#### إعداد قاعدة البيانات
 
--   يرتب`DATABASE_URL`ل`.env`
+-   تعيين`DATABASE_URL`ل`.env`
 
 ```sh
 DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=public"
@@ -69,13 +69,13 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=pu
 DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=public"
 ```
 
--   قم بتشغيل الترحيل لإنشاء الجداول المطلوبة
+-   تشغيل الترحيل لجعل الجدول المطلوب
 
 ```bash
 npx prisma migrate deploy
 ```
 
--   قم بتشغيل بذارة قاعدة البيانات لإنشاء مستخدمين`superadmin`
+-   قم بتشغيل قاعدة البيانات لإنشاء مستخدم`superadmin`
 
 ```bash
 npm run db:seed
@@ -83,9 +83,9 @@ npm run db:seed
 
 #### يثبت**تسجيل الدخول جوجل**معرف الخادم والعميل
 
--   إنشاء مشروع جديد في[جوجل السحابية وحدة التحكم](https://console.cloud.google.com/projectcreate)
+-   إنشاء مشروع جديد في[وحدة التحكم السحابية Google](https://console.cloud.google.com/projectcreate)
 
--   بمجرد الانتهاء من إنشاء المشروع، حدده`APIs & Services`، ثم حدد`OAuth consent screen`على الجانب الأيسر
+-   بمجرد الانتهاء من صنع المشروع ، حدد`APIs & Services`، ثم اختر`OAuth consent screen`على اليسار
 
 -   أدخل اسم التطبيق والبريد الإلكتروني و`Developer contact information`
 
@@ -93,16 +93,16 @@ npm run db:seed
 
 -   **الخادم**معرف العميل
 
-    -   يختار`Credentials`في الشريط الجانبي الأيسر، انقر فوق`CREATE CREDENTIALS`، يختار`OAuth client ID`
+    -   يختار`Credentials`على الشريط الجانبي الأيسر ، انقر`CREATE CREDENTIALS`، يختار`OAuth client ID`
 
     ![Cloud Console](/assets/Screenshot_2.png)
 
 
--   يختار`Web application`نوع التطبيق، بيري ناما لالو حفظ/إنشاء
+-   يختار`Web application`نوع التطبيق ، Beri nama lalu حفظ/إنشاء
 
     ![Cloud Console](/assets/Screenshot_3.png)
 
--   ترجمة`Client ID`و`Client secret`أعطيت`.env`
+-   ترجمة`Client ID`و`Client secret`ملف`.env`
 
     ```sh
     # google oauth
@@ -110,15 +110,15 @@ npm run db:seed
     SERVER_GOOGLE_CLIENT_SECRET=
     ```
 
--   **التطبيق على شبكة الإنترنت**معرف العميل
+-   **تطبيق الويب**معرف العميل
 
-    -   `CREATE CREDENTIALS`العودة، حدد`OAuth client ID`
+    -   `CREATE CREDENTIALS`مرة أخرى ، اختر`OAuth client ID`
 
-    -   يختار`Web application`نوع التطبيق، وإعطاء اسم و`Authorized JavaScript origins`كما في الصورة (إذا كنت تستخدم المضيف المحلي)، ثم احفظ/أنشئ
+    -   يختار`Web application`نوع التطبيق والاسم و`Authorized JavaScript origins`كما هو الحال في الصورة (إذا كنت تستخدم مضيفًا محليًا) ، فاحفظ/إنشاء
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
-    -   ترجمة`Client ID`و`Client secret`أعطيت`.env`
+    -   ترجمة`Client ID`و`Client secret`ملف`.env`
 
     ```sh
     # optional web only
@@ -126,12 +126,12 @@ npm run db:seed
     WEB_APP_GOOGLE_CLIENT_SECRET=
     ```
 
-    -   انقر`DOWNLOAD JSON`وحفظ معرف العميل. سيتم استخدام معرف عميل الويب في تطبيق Flutter للجوال.
+    -   انقر`DOWNLOAD JSON`وحفظ معرف العميل. سيتم استخدام معرف عميل الويب في رفرفة تطبيق الهاتف المحمول.
 
-#### إعداد خادم midtrans ومفتاح العميل
+#### إعداد Midtrans Server & Client Key
 
--   اذهب إلى[لوحة القيادة ميدترانس](https://dashboard.midtrans.com/)، حدد البيئة`sandbox`(مستحسن) أو`production`
--   أدخل إلى`Settings`>`Access Keys`، ثم انسخ مفاتيح العميل والخادم إلى الملف`.env`
+-   اذهب إلى[لوحة القيادة Midtrans](https://dashboard.midtrans.com/)، حدد البيئة`sandbox`(موصى به) أو`production`
+-   يدخل`Settings`>`Access Keys`، ثم انسخ مفتاح العميل والخادم إلى الملف`.env`
 
 ```sh
 # sandbox
@@ -143,9 +143,9 @@ MIDTRANS_SERVER_KEY=
 MIDTRANS_CLIENT_KEY=
 ```
 
--   التكوين المتغير`.env`أخرى حسب الحاجة.
+-   التكوين المتغير`.env`الآخرين حسب الحاجة.
 
-### كيف تركض
+### كيفية الجري
 
 1.  يولد`metadata`:
 
@@ -159,7 +159,7 @@ npm run metadata --workspace=@backtix-service/api
 npm run start
 ```
 
--   وضع التنمية
+-   وضع التطوير
 
 ```bash
 npm run start:dev
@@ -167,7 +167,7 @@ npm run start:dev
 
 2.  مستندات Swagger API
 
--   افتح http&#x3A;//localhost:3000/api/docs (اضبط عنوان URL الأساسي)
+-   افتح http&#x3A; // localhost: 3000/fire/docs (اضبط عنوان URL الأساسي)
 
 3.  اختبار (اختياري)
 

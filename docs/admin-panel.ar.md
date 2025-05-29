@@ -1,4 +1,4 @@
-## لوحة الإدارة (SvelteKit)
+## لوحة المسؤول (Sveltekit)
 
 <a href="./admin-panel.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -33,23 +33,23 @@
 
 ### متطلبات النظام
 
-تأكد من أن نظامك يلبي المتطلبات التالية قبل بدء التثبيت:
+تأكد من أن نظامك يفي بالمتطلبات التالية قبل بدء التثبيت:
 
--   Node.js v18 أو أعلى
+-   node.js v18 أو أعلى
 -   PostgreSQL 15 أو أعلى
--   ريديس v5 أو أعلى
+-   redis v5 أو أعلى
 
 ### خطوات التثبيت
 
-1.  اتبع خطوات التثبيت[خدمة الخلفية](api-service.md)أولاً
+1.  اتبع خطوات التثبيت[خدمة خلفية](api-service.md)مقدماً
 
 2.  بيئة الإعداد
 
     إعادة تسمية`.env.example`ل`.env`
 
-    يجب أن تكون قيم المضيف والمنفذ/الأصل مختلفة عن خدمة واجهة برمجة التطبيقات
+    يجب أن تكون قيم المضيف والمنفذ / الأصل مختلفة عن خدمة API
 
-### كيف تركض
+### كيفية الجري
 
 1.  يبني
 
