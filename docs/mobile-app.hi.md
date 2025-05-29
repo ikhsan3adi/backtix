@@ -33,21 +33,21 @@
 
 ### सिस्टम आवश्यकताएं
 
-इंस्टॉलेशन शुरू करने से पहले सुनिश्चित करें कि आपका सिस्टम निम्नलिखित आवश्यकताओं को पूरा करता है:
+सुनिश्चित करें कि आपका सिस्टम इंस्टॉलेशन शुरू करने से पहले निम्नलिखित आवश्यकताओं को पूरा करता है:
 
--   स्पंदन SDK v3.16 या उच्चतर
+-   SDK V3.16 या उच्चतर स्पंदन
 
 ### स्थापना चरण
 
-1.  क्लोन/एक्सट्रेक्ट रिपॉजिटरी
+1.  क्लोन/एक्सट्रैक्ट रिपॉजिटरी
 
-2.  निर्भरताएँ स्थापित करें:
+2.  निर्भरता स्थापित करें:
 
 ```bash
 flutter pub get
 ```
 
-3.  दौड़ना`build_runner`फ़ाइलें उत्पन्न करने के लिए`*.g.dart`
+3.  दौड़ना`build_runner`फ़ाइलों को उत्पन्न करने के लिए`*.g.dart`
 
 ```bash
 dart run build_runner build
@@ -57,13 +57,13 @@ dart run build_runner build
 
 1.  नाम बदलें`.env.example`को`.env`
 
-2.  अनुकूलित करें`API_BASE_URL`फ़ाइलों का`.env`
+2.  समायोजित करना`API_BASE_URL`फ़ाइल`.env`
 
-#### मिडट्रांस क्लाइंट कुंजी
+#### Midtrans ग्राहक कुंजी
 
--   पिछले चरण को पूरा करें[बैक-एंड सेवा - सेटअप मिडट्रांस सर्वर और क्लाइंट कुंजी](api-service.md#setup-midtrans-server--client-key)
+-   पिछले चरण को पूरा करें[बैक -एंड सर्विस - सेटअप मिडट्रांस सर्वर और क्लाइंट कुंजी](api-service.md#setup-midtrans-server--client-key)
 
--   अनुवाद**ग्राहक कुंजी**के फाइल`.env`
+-   अनुवाद**ग्राहक कुंजी**ke file`.env`
 
 ```sh
 # for debug / sandbox
@@ -72,11 +72,11 @@ MIDTRANS_CLIENT_KEY_SANDBOX=SB-Mid-client-xxxx
 MIDTRANS_CLIENT_KEY=Mid-client-xxxx
 ```
 
-#### स्थापित करना**गूगल साइन इन करें**ग्राहक ID
+#### स्थापित करना**Google में साइन इन करें**ग्राहक आईडी
 
--   पिछले चरण को पूरा करें[बैक-एंड सेवा - Google साइन इन सर्वर और क्लाइंट आईडी सेटअप करें](api-service.md#setup-google-sign-in-server--client-id)
+-   पिछले चरण को पूरा करें[बैक -एंड सर्विस - सर्वर और क्लाइंट आईडी में Google साइन सेट करें](api-service.md#setup-google-sign-in-server--client-id)
 
--   अनुवाद`Web Client ID`और`Server Client ID`के फाइल`.env`
+-   अनुवाद`Web Client ID`और`Server Client ID`ke file`.env`
 
 ```sh
 # frontend google signin / web client id
@@ -85,7 +85,7 @@ GOOGLE_CLIENT_ID=xxxx.apps.googleusercontent.com
 GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 ```
 
--   अनुवाद`Web Client ID`के`android/app/src/main/res/values/strings.xml`
+-   अनुवाद`Web Client ID`ke`android/app/src/main/res/values/strings.xml`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,20 +94,20 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
 </resources>
 ```
 
--   **एंड्रॉयड**ग्राहक ID
+-   **एंड्रॉइड**ग्राहक आईडी
 
-    -   एक टर्मिनल खोलें, एप्लिकेशन प्रोजेक्ट निर्देशिका पर नेविगेट करें
+    -   टर्मिनल खोलें, एप्लिकेशन प्रोजेक्ट डायरेक्टरी में नेविगेट करें
 
-    -   फिर एंड्रॉइड फ़ोल्डर में नेविगेट करें
+    -   फिर Android फ़ोल्डर की मेजबानी करें
 
         ```bash
         cd <path-to-project>
         cd android
         ```
 
-    -   निम्न आदेश चलाएँ
+    -   निम्नलिखित कमांड चलाएं
 
-        -   Linux और MacOS के लिए
+        -   लिनक्स और मैकओएस के लिए
 
         ```bash
         keytool -genkey -v -keystore <path-to-project>/android/app/androidkey.jks -keyalg RSA -keysize 2048 -validity 10000 -alias keyalias
@@ -122,7 +122,7 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         -alias upload
         ```
 
-        -   :चेतावनी: बदलें`<path-to-project>`एप्लिकेशन प्रोजेक्ट निर्देशिका पथ के साथ।
+        -   : चेतावनी: परिवर्तन`<path-to-project>`एप्लिकेशन प्रोजेक्ट के एप्लिकेशन डायरेक्टरी के साथ।
             उदाहरण:
 
         ```bash
@@ -132,9 +132,9 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         D:/ngoding/flutter/backtix-app/android/app/androidkey.jks
         ```
 
-        -   उदाहरण के लिए, आपसे पासवर्ड दर्ज करने के लिए कहा जाएगा`backtix`
+        -   आपको एक पासवर्ड दर्ज करने के लिए कहा जाएगा, उदाहरण`backtix`
 
-    -   खुली फ़ाइलें`android/app/build.gradle`फिर इस भाग को बदलें:
+    -   फ़ाइल खोलें`android/app/build.gradle`फिर इस खंड को बदलें:
         ```gradle
         signingConfigs {
           debug {
@@ -146,25 +146,25 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         }
         ```
 
-    -   टर्मिनल खोलें, फ़ोल्डर पर नेविगेट करें`android`एप्लिकेशन प्रोजेक्ट में, फिर निम्न कमांड चलाएँ:
+    -   टर्मिनल खोलें, फ़ोल्डर की ओर इशारा करें`android`एप्लिकेशन प्रोजेक्ट में, फिर निम्न कमांड चलाएं:
 
         ```bash
         ./gradlew signingReport
         ```
 
-    -   मान खोजें और कॉपी करें`SHA1`से`variant: debug`उच्चतम।
+    -   खोज और प्रतिलिपि मूल्य`SHA1`से`variant: debug`उच्चतम।
 
         ![Terminal](/assets/Screenshot_5.png)
 
-    -   जाओ[गूगल क्लाउड कंसोल](https://console.cloud.google.com)
+    -   जाओ[Google Cloud Console](https://console.cloud.google.com)
 
         ![Cloud Console](/assets/Screenshot_2.png)
 
-    -   चुनना`Credentials`बाएँ साइडबार में, क्लिक करें`CREATE CREDENTIALS`, चुनना`OAuth client ID`
+    -   चुनना`Credentials`बाईं साइडबार पर, क्लिक करें`CREATE CREDENTIALS`, चुनना`OAuth client ID`
 
-    -   चुनना`Android`आवेदन का प्रकार
+    -   चुनना`Android`अनुप्रयोग प्रकार
 
-    -   इसे एक नाम दें, और`Package name`. पैकेज का नाम फ़ाइल से जाना जा सकता है`android/app/build.gradle`
+    -   नाम, और`Package name`। पैकेज का नाम फ़ाइल से देखा जा सकता है`android/app/build.gradle`
 
         ```gradle
         android {
@@ -178,6 +178,6 @@ GOOGLE_SERVER_CLIENT_ID=xxxx.apps.googleusercontent.com
         ![Cloud Console](/assets/Screenshot_6.png)
 
 
--   यदि आप पैकेज का नाम बदलना चाहते हैं, तो आप इसका उपयोग कर सकते हैं[Change_app_package_name](https://pub.dev/packages/change_app_package_name)
+-   यदि आप पैकेज नाम बदलना चाहते हैं तो आप उपयोग कर सकते हैं[CHANGE_APP_PACKAGE_NAME](https://pub.dev/packages/change_app_package_name)
 
 -   प्रवेश करना`SHA1`पिछले चरण से, फिर सहेजें/बनाएं

@@ -1,4 +1,4 @@
-## बैक-एंड सेवा (NestJS)
+## बैक-एंड सर्विस (NESTJS)
 
 <a href="./api-service.md">
   <img alt="Translation" src="https://img.shields.io/badge/Bahasa_Indonesia-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
@@ -31,24 +31,24 @@
   <img alt="Translation" src="https://img.shields.io/badge/Hindi_हिंदी-blue?style=for-the-badge&logo=googletranslate&logoColor=blue&labelColor=white">
 </a>
 
-इसमें एक व्यवस्थापक पैनल एप्लिकेशन शामिल है
+इसमें व्यवस्थापक एप्लिकेशन पैनल शामिल है
 
     apps/api
     apps/admin-panel
 
 ### सिस्टम आवश्यकताएं
 
-इंस्टॉलेशन शुरू करने से पहले सुनिश्चित करें कि आपका सिस्टम निम्नलिखित आवश्यकताओं को पूरा करता है:
+सुनिश्चित करें कि आपका सिस्टम इंस्टॉलेशन शुरू करने से पहले निम्नलिखित आवश्यकताओं को पूरा करता है:
 
 -   Node.js v18 या उच्चतर
--   PostgreSQL 15 या उच्चतर
--   रेडिस v5 या उच्चतर
+-   Postgresql 15 या उच्चतर
+-   Redis V5 या उच्चतर
 
 ### स्थापना चरण
 
-1.  क्लोन/एक्सट्रेक्ट रिपॉजिटरी
+1.  क्लोन/एक्सट्रैक्ट रिपॉजिटरी
 
-2.  निर्भरताएँ स्थापित करें:
+2.  निर्भरता स्थापित करें:
 
 ```bash
 npm i
@@ -60,7 +60,7 @@ npm i
 
 #### सेटअप डेटाबेस
 
--   व्यवस्थित करना`DATABASE_URL`का`.env`
+-   तय करना`DATABASE_URL`का`.env`
 
 ```sh
 DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=public"
@@ -69,40 +69,40 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:5432/<db-name>?schema=pu
 DATABASE_URL="postgresql://postgres:postgre123@localhost:5432/backtix?schema=public"
 ```
 
--   आवश्यक तालिकाएँ बनाने के लिए माइग्रेशन चलाएँ
+-   आवश्यक तालिका बनाने के लिए माइग्रेशन चलाएं
 
 ```bash
 npx prisma migrate deploy
 ```
 
--   उपयोगकर्ता बनाने के लिए डेटाबेस सीडर चलाएँ`superadmin`
+-   उपयोगकर्ता बनाने के लिए डेटाबेस सीडर चलाएं`superadmin`
 
 ```bash
 npm run db:seed
 ```
 
-#### स्थापित करना**गूगल साइन इन करें**सर्वर और क्लाइंट आईडी
+#### स्थापित करना**Google में साइन इन करें**सर्वर और ग्राहक आईडी
 
--   पर एक नया प्रोजेक्ट बनाएं[गूगल क्लाउड कंसोल](https://console.cloud.google.com/projectcreate)
+-   पर एक नई परियोजना बनाएं[Google Cloud Console](https://console.cloud.google.com/projectcreate)
 
--   एक बार जब आप प्रोजेक्ट बनाना पूरा कर लें, तो उसे चुनें`APIs & Services`, फिर चुनें`OAuth consent screen`बायीं तरफ पर
+-   एक बार परियोजना बनाने के बाद, चयन करें`APIs & Services`, उसके बाद चुनो`OAuth consent screen`बाईं तरफ
 
--   एप्लिकेशन का नाम, ईमेल और दर्ज करें`Developer contact information`
+-   आवेदन, ईमेल और का नाम दर्ज करें`Developer contact information`
 
 ![Cloud Console](/assets/Screenshot_1.png)
 
--   **सर्वर**ग्राहक ID
+-   **सर्वर**ग्राहक आईडी
 
-    -   चुनना`Credentials`बाएँ साइडबार में, क्लिक करें`CREATE CREDENTIALS`, चुनना`OAuth client ID`
+    -   चुनना`Credentials`बाईं साइडबार पर, क्लिक करें`CREATE CREDENTIALS`, चुनना`OAuth client ID`
 
     ![Cloud Console](/assets/Screenshot_2.png)
 
 
--   चुनना`Web application`आवेदन प्रकार, बेरी नामा लालू सहेजें/बनाएं
+-   चुनना`Web application`एप्लिकेशन प्रकार, बेरी नाम लालू सहेजें/बनाएं
 
     ![Cloud Console](/assets/Screenshot_3.png)
 
--   अनुवाद`Client ID`और`Client secret`के फाइल`.env`
+-   अनुवाद`Client ID`और`Client secret`ke file`.env`
 
     ```sh
     # google oauth
@@ -110,15 +110,15 @@ npm run db:seed
     SERVER_GOOGLE_CLIENT_SECRET=
     ```
 
--   **वेब अप्प**ग्राहक ID
+-   **वेब अप्प**ग्राहक आईडी
 
-    -   `CREATE CREDENTIALS`वापस, चयन करें`OAuth client ID`
+    -   `CREATE CREDENTIALS`वापस, चुनें`OAuth client ID`
 
-    -   चुनना`Web application`आवेदन का प्रकार, एक नाम दें और`Authorized JavaScript origins`चित्र के अनुसार (यदि लोकलहोस्ट का उपयोग कर रहे हैं), तो सहेजें/बनाएं
+    -   चुनना`Web application`अनुप्रयोग प्रकार, नाम और`Authorized JavaScript origins`चित्र की तरह (यदि लोकलहोस्ट का उपयोग कर रहा है), तो सहेजें/बनाएं
 
     ![Cloud Console](/assets/Screenshot_4.png)
 
-    -   अनुवाद`Client ID`और`Client secret`के फाइल`.env`
+    -   अनुवाद`Client ID`और`Client secret`ke file`.env`
 
     ```sh
     # optional web only
@@ -126,12 +126,12 @@ npm run db:seed
     WEB_APP_GOOGLE_CLIENT_SECRET=
     ```
 
-    -   क्लिक`DOWNLOAD JSON`और क्लाइंट आईडी सेव करें। वेब क्लाइंट आईडी का उपयोग फ़्लटर मोबाइल ऐप में किया जाएगा।
+    -   क्लिक`DOWNLOAD JSON`और क्लाइंट आईडी सहेजें। वेब क्लाइंट आईडी का उपयोग मोबाइल ऐप फ्लूट में किया जाएगा।
 
-#### मिडट्रांस सर्वर और क्लाइंट कुंजी सेटअप करें
+#### सेटअप midtrans सर्वर और क्लाइंट कुंजी
 
--   जाओ[डैशबोर्ड मिडट्रांस](https://dashboard.midtrans.com/), पर्यावरण का चयन करें`sandbox`(अनुशंसित) अताउ`production`
--   में दर्ज`Settings`>`Access Keys`, लालू सलीन क्लाइंट डान सर्वर कीय के फाइल`.env`
+-   जाओ[डैशबोर्ड मिडट्रान्स](https://dashboard.midtrans.com/), पर्यावरण का चयन करें`sandbox`(अनुशंसित) या`production`
+-   प्रवेश करना`Settings`>`Access Keys`, lalu salin client dan server key ke file`.env`
 
 ```sh
 # sandbox
@@ -145,7 +145,7 @@ MIDTRANS_CLIENT_KEY=
 
 -   परिवर्तनीय विन्यास`.env`आवश्यकतानुसार अन्य।
 
-### कैसे चलायें
+### कैसे चलाएं
 
 1.  उत्पन्न`metadata`:
 
@@ -153,21 +153,21 @@ MIDTRANS_CLIENT_KEY=
 npm run metadata --workspace=@backtix-service/api
 ```
 
-2.  ऐप चलाएँ
+2.  रन ऐप
 
 ```bash
 npm run start
 ```
 
--   विकास मोड
+-   विकास विधा
 
 ```bash
 npm run start:dev
 ```
 
-2.  स्वैगर एपीआई दस्तावेज़
+2.  स्वैगर एपीआई डॉक्स
 
--   http&#x3A;//localhost:3000/api/docs खोलें (आधार यूआरएल समायोजित करें)
+-   खुला http&#x3A; // localhost: 3000/आग/डॉक्स (आधार URL समायोजित करें)
 
 3.  परीक्षण (वैकल्पिक)
 
