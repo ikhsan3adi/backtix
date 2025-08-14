@@ -47,7 +47,7 @@ Make sure your system meets the following requirements before starting the insta
 
     Rename`.env.example`to`.env`
 
-    Host & port / origin values ​​must be different from API Service
+    Host & port / origin values must be different from API Service
 
 ### How to run
 
