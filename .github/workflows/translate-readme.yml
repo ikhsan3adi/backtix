@@ -1,9 +1,7 @@
 name: Translate README
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,7 +11,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: latest
 
       - name: Adding README translations
         uses: ikhsan3adi/markdown-translator@master
